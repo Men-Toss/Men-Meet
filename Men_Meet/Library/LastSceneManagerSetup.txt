@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/TestScene/TestLoginScene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
