@@ -3,9 +3,9 @@
 
 
 
--- ************************************** `Men_Meet_Schema`.`Alert_Table`
+-- ************************************** `mentoss123`.`Alert_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`Alert_Table`
+CREATE TABLE `mentoss123`.`Alert_Table`
 (
  `Alert_Count`    int NOT NULL AUTO_INCREMENT ,
  `Alert_User_ID`  varchar(20) NOT NULL ,
@@ -15,7 +15,7 @@ CREATE TABLE `Men_Meet_Schema`.`Alert_Table`
 
 PRIMARY KEY (`Alert_Count`, `Alert_User_ID`),
 KEY `FK_197` (`Alert_User_ID`),
-CONSTRAINT `FK_195` FOREIGN KEY `FK_197` (`Alert_User_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`)
+CONSTRAINT `FK_195` FOREIGN KEY `FK_197` (`Alert_User_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`)
 );
 
 
@@ -25,9 +25,9 @@ CONSTRAINT `FK_195` FOREIGN KEY `FK_197` (`Alert_User_ID`) REFERENCES `Men_Meet_
 
 
 
--- ************************************** `Men_Meet_Schema`.`Manager_Table`
+-- ************************************** `mentoss123`.`Manager_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`Manager_Table`
+CREATE TABLE `mentoss123`.`Manager_Table`
 (
  `Manager_ID`    varchar(20) NOT NULL ,
  `Manager_PW`    varchar(20) NOT NULL ,
@@ -43,9 +43,9 @@ PRIMARY KEY (`Manager_ID`)
 
 
 
--- ************************************** `Men_Meet_Schema`.`Menti_Table`
+-- ************************************** `mentoss123`.`Menti_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`Menti_Table`
+CREATE TABLE `mentoss123`.`Menti_Table`
 (
  `Menti_Number`      int NOT NULL AUTO_INCREMENT ,
  `User_Char_User_ID` varchar(20) NOT NULL ,
@@ -55,7 +55,7 @@ CREATE TABLE `Men_Meet_Schema`.`Menti_Table`
 
 PRIMARY KEY (`Menti_Number`, `User_Char_User_ID`),
 KEY `FK_48` (`User_Char_User_ID`),
-CONSTRAINT `FK_USER_MENTI` FOREIGN KEY `FK_48` (`User_Char_User_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`)
+CONSTRAINT `FK_USER_MENTI` FOREIGN KEY `FK_48` (`User_Char_User_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`)
 );
 
 
@@ -66,9 +66,9 @@ CONSTRAINT `FK_USER_MENTI` FOREIGN KEY `FK_48` (`User_Char_User_ID`) REFERENCES 
 
 
 
--- ************************************** `Men_Meet_Schema`.`Mento_Table`
+-- ************************************** `mentoss123`.`Mento_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`Mento_Table`
+CREATE TABLE `mentoss123`.`Mento_Table`
 (
  `Mento_Number`      int NOT NULL AUTO_INCREMENT ,
  `Mento__User_ID`    varchar(20) NOT NULL ,
@@ -78,7 +78,7 @@ CREATE TABLE `Men_Meet_Schema`.`Mento_Table`
 
 PRIMARY KEY (`Mento_Number`, `Mento__User_ID`),
 KEY `FK_35` (`Mento__User_ID`),
-CONSTRAINT `FK_User_Mento` FOREIGN KEY `FK_35` (`Mento__User_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`)
+CONSTRAINT `FK_User_Mento` FOREIGN KEY `FK_35` (`Mento__User_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`)
 );
 
 
@@ -90,9 +90,9 @@ CONSTRAINT `FK_User_Mento` FOREIGN KEY `FK_35` (`Mento__User_ID`) REFERENCES `Me
 
 
 
--- ************************************** `Men_Meet_Schema`.`QnA_Table`
+-- ************************************** `mentoss123`.`QnA_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`QnA_Table`
+CREATE TABLE `mentoss123`.`QnA_Table`
 (
  `QnA_Post_Number`       bigint NOT NULL AUTO_INCREMENT ,
  `User_Char_User_ID`     varchar(20) NOT NULL ,
@@ -106,9 +106,9 @@ CREATE TABLE `Men_Meet_Schema`.`QnA_Table`
 
 PRIMARY KEY (`QnA_Post_Number`, `User_Char_User_ID`),
 KEY `FK_149` (`QnA_Manager_ID`),
-CONSTRAINT `FK_Mnager_QnA` FOREIGN KEY `FK_149` (`QnA_Manager_ID`) REFERENCES `Men_Meet_Schema`.`Manager_Table` (`Manager_ID`),
+CONSTRAINT `FK_Mnager_QnA` FOREIGN KEY `FK_149` (`QnA_Manager_ID`) REFERENCES `mentoss123`.`Manager_Table` (`Manager_ID`),
 KEY `FK_65` (`User_Char_User_ID`),
-CONSTRAINT `FK_User_QnA` FOREIGN KEY `FK_65` (`User_Char_User_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`)
+CONSTRAINT `FK_User_QnA` FOREIGN KEY `FK_65` (`User_Char_User_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`)
 );
 
 
@@ -120,9 +120,9 @@ CONSTRAINT `FK_User_QnA` FOREIGN KEY `FK_65` (`User_Char_User_ID`) REFERENCES `M
 
 
 
--- ************************************** `Men_Meet_Schema`.`Reservation_Table`
+-- ************************************** `mentoss123`.`Reservation_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`Reservation_Table`
+CREATE TABLE `mentoss123`.`Reservation_Table`
 (
  `Reservation_PostNumber`        int NOT NULL ,
  `Reservation_ReservationNumber` int NOT NULL AUTO_INCREMENT ,
@@ -136,9 +136,9 @@ CREATE TABLE `Men_Meet_Schema`.`Reservation_Table`
 
 PRIMARY KEY (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`),
 KEY `FK_182` (`Reservation_Mento_ID`),
-CONSTRAINT `FK_User_Reservation_Mento` FOREIGN KEY `FK_182` (`Reservation_Mento_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`),
+CONSTRAINT `FK_User_Reservation_Mento` FOREIGN KEY `FK_182` (`Reservation_Mento_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`),
 KEY `FK_186` (`Reservation_Menti_ID`),
-CONSTRAINT `FK_User_Reservation_Menti` FOREIGN KEY `FK_186` (`Reservation_Menti_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`)
+CONSTRAINT `FK_User_Reservation_Menti` FOREIGN KEY `FK_186` (`Reservation_Menti_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`)
 );
 
 
@@ -150,9 +150,9 @@ CONSTRAINT `FK_User_Reservation_Menti` FOREIGN KEY `FK_186` (`Reservation_Menti_
 
 
 
--- ************************************** `Men_Meet_Schema`.`Review_Table`
+-- ************************************** `mentoss123`.`Review_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`Review_Table`
+CREATE TABLE `mentoss123`.`Review_Table`
 (
  `Reservation_PostNumber`        int NOT NULL ,
  `Reservation_ReservationNumber` int NOT NULL ,
@@ -163,7 +163,7 @@ CREATE TABLE `Men_Meet_Schema`.`Review_Table`
 
 PRIMARY KEY (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`),
 KEY `FK_125` (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`),
-CONSTRAINT `FK_Reservation_Review` FOREIGN KEY `FK_125` (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`) REFERENCES `Men_Meet_Schema`.`Reservation_Table` (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`)
+CONSTRAINT `FK_Reservation_Review` FOREIGN KEY `FK_125` (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`) REFERENCES `mentoss123`.`Reservation_Table` (`Reservation_PostNumber`, `Reservation_ReservationNumber`, `Reservation_Mento_ID`, `Reservation_Menti_ID`)
 );
 
 
@@ -175,9 +175,9 @@ CONSTRAINT `FK_Reservation_Review` FOREIGN KEY `FK_125` (`Reservation_PostNumber
 
 
 
--- ************************************** `Men_Meet_Schema`.`School_Table`
+-- ************************************** `mentoss123`.`School_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`School_Table`
+CREATE TABLE `mentoss123`.`School_Table`
 (
  `School_Department`           varchar(45) NOT NULL ,
  `School_Department_Introduce` varchar(1000) NOT NULL ,
@@ -194,9 +194,9 @@ PRIMARY KEY (`School_Department`)
 
 
 
--- ************************************** `Men_Meet_Schema`.`User_Char_Table`
+-- ************************************** `mentoss123`.`User_Char_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`User_Char_Table`
+CREATE TABLE `mentoss123`.`User_Char_Table`
 (
  `User_Char_User_ID`  varchar(20) NOT NULL ,
  `User_Char_Hat`      int NOT NULL ,
@@ -209,7 +209,7 @@ CREATE TABLE `Men_Meet_Schema`.`User_Char_Table`
 
 PRIMARY KEY (`User_Char_User_ID`),
 KEY `FK_130` (`User_Char_User_ID`),
-CONSTRAINT `FK_User_User_Char` FOREIGN KEY `FK_130` (`User_Char_User_ID`) REFERENCES `Men_Meet_Schema`.`User_Table` (`User_Char_User_ID`)
+CONSTRAINT `FK_User_User_Char` FOREIGN KEY `FK_130` (`User_Char_User_ID`) REFERENCES `mentoss123`.`User_Table` (`User_Char_User_ID`)
 );
 
 
@@ -220,9 +220,9 @@ CONSTRAINT `FK_User_User_Char` FOREIGN KEY `FK_130` (`User_Char_User_ID`) REFERE
 
 
 
--- ************************************** `Men_Meet_Schema`.`User_Table`
+-- ************************************** `mentoss123`.`User_Table`
 
-CREATE TABLE `Men_Meet_Schema`.`User_Table`
+CREATE TABLE `mentoss123`.`User_Table`
 (
  `User_Char_User_ID`  varchar(20) NOT NULL ,
  `User_Char_Hat`      int NOT NULL ,
