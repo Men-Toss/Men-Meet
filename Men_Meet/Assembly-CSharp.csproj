@@ -72,6 +72,7 @@
     <Compile Include="Assets\AssetStore\simple modular human\scripts\clothing.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\CharChoosePrefab.cs" />
+    <Compile Include="Assets\Script\PhotonManageScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetStore\simple modular human\readMe.txt" />

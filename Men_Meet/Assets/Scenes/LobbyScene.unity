@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -346,7 +346,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135271312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 44.696987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1196390187}
@@ -355,7 +355,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 946, y: 1071.836}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &151710470
 GameObject:
@@ -596,7 +596,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 996262521}
         m_TargetAssemblyTypeName: LobbyButton, Assembly-CSharp
-        m_MethodName: LogOutCLick
+        m_MethodName: CharLoadWomen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1805,8 +1805,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 211489442}
   m_HandleRect: {fileID: 211489441}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.55922544
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1967,11 +1967,39 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eaa02aca434a6c34f88c672addc68877, type: 3}
   - {fileID: 21300000, guid: b9db893340b53764f987102ab9f27504, type: 3}
   - {fileID: 21300000, guid: 41c56c52a51aaf74187f985c42cec8ce, type: 3}
+  - {fileID: 21300000, guid: a0388b7cbbba6d74da2ab64b3f6375a1, type: 3}
+  - {fileID: 21300000, guid: df7d723040ecc5e4290603bcda5b2ba5, type: 3}
+  - {fileID: 21300000, guid: e66bee5428fed2940a3e3c430f94ee38, type: 3}
+  - {fileID: 21300000, guid: f3487684e6623384a9d5fa757f0b6080, type: 3}
+  - {fileID: 21300000, guid: e6dc5492d1724c54a87855a5b1f5b0a2, type: 3}
+  - {fileID: 21300000, guid: a0fe0472504cfe7498a37e66397ca79e, type: 3}
+  - {fileID: 21300000, guid: a6ec532206babf448bcd4941878454d5, type: 3}
+  - {fileID: 21300000, guid: 4d69b733c3520464abcb34812506b694, type: 3}
+  - {fileID: 21300000, guid: 75e7084d2bd587f4096009201f202373, type: 3}
+  - {fileID: 21300000, guid: 6b5b20666ca8b0f43af7890851f9349e, type: 3}
+  - {fileID: 21300000, guid: d5aef4c276b86854d828a2f907869687, type: 3}
+  - {fileID: 21300000, guid: 75e7084d2bd587f4096009201f202373, type: 3}
+  - {fileID: 21300000, guid: ac84e949423057e40bb4bfc3677ef312, type: 3}
+  - {fileID: 21300000, guid: 878945adef45b4a43a6f3d3bc09af156, type: 3}
+  - {fileID: 21300000, guid: 601ee8afb6f311047bc62756c54a381e, type: 3}
+  - {fileID: 21300000, guid: 47443374aed747d4eb3755d0aa6367d0, type: 3}
+  - {fileID: 21300000, guid: 495e4b17658b8574985dd6ca0c53d142, type: 3}
+  - {fileID: 21300000, guid: fba644c316bb39d4298a382943fc58e2, type: 3}
+  - {fileID: 21300000, guid: 27e7d37a8df600c49b72476d6613de05, type: 3}
+  CharLogoWomenArr:
   - {fileID: 21300000, guid: 19094fd6c4fbae544bf85c59096798cd, type: 3}
   - {fileID: 21300000, guid: 486ac0bea1d9fbf45835de5d80151ef5, type: 3}
-  - {fileID: 21300000, guid: a0388b7cbbba6d74da2ab64b3f6375a1, type: 3}
-  - {fileID: 21300000, guid: a0fe0472504cfe7498a37e66397ca79e, type: 3}
-  CharLogoWomenArr: []
+  - {fileID: 21300000, guid: 32141fd8cbbcf8543accea0edd854e7c, type: 3}
+  - {fileID: 21300000, guid: bc24084d4eb669147a471a339480fbf8, type: 3}
+  - {fileID: 21300000, guid: 3a300cbc69b96694eb01bc83b5590bb6, type: 3}
+  - {fileID: 21300000, guid: 167e01db5dd3d5449a90e65d572a54b4, type: 3}
+  - {fileID: 21300000, guid: 4d99ff190e6d7bd43bdba70913b9d9fc, type: 3}
+  - {fileID: 21300000, guid: e2bd646f1de5d254da657cc3caed5113, type: 3}
+  - {fileID: 21300000, guid: 4f98f7957f4ab7545a99ba3d8c56d163, type: 3}
+  - {fileID: 21300000, guid: 914c90c23d8f7a747adbc244f9e9b4fb, type: 3}
+  - {fileID: 21300000, guid: c5148aada8c73504ba3a166114e02384, type: 3}
+  - {fileID: 21300000, guid: 1dc47cdbbcce7b04a936666c5a9a8893, type: 3}
+  Space: 10
   choosePrefab: {fileID: 3791065868221288518, guid: 53ce19743572ad44895346c644e7785a, type: 3}
 --- !u!4 &996262522
 Transform:
@@ -2089,7 +2117,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1562029734628440, guid: 10c5537e0d3282544b4c5948d4be85ef, type: 3}
       propertyPath: m_Name
-      value: MiniCharacter_Biker_01
+      value: LobbyChar
       objectReference: {fileID: 0}
     - target: {fileID: 1562029734628440, guid: 10c5537e0d3282544b4c5948d4be85ef, type: 3}
       propertyPath: m_IsActive
@@ -2785,16 +2813,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414811275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
 --- !u!114 &1414811277
 MonoBehaviour:
   m_ObjectHideFlags: 0
