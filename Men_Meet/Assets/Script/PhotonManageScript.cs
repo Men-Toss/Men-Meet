@@ -7,58 +7,99 @@ using Photon.Realtime;
 
 public class PhotonManageScript : MonoBehaviourPunCallbacks
 {
-    /*
-    [SerializeField] Text Statetext;
-    //³×Æ®¿öÅ© ¼­¹ö ¿¬°á
+    public Text MainStatetext;
+    public Text Statetext;
+    public Image ProgressBar;
+    public Button StartButton;
+    public LoadingTextScript loadingTextScript;
+    //ë„¤íŠ¸ì›Œí¬ ì„œë²„ ì—°ê²°
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
-    //Connect()Äİ¹é ÇÔ¼ö
+    //Connect()ì½œë°± í•¨ìˆ˜
     public override void OnConnectedToMaster()
     {
-        Statetext.text+="¼­¹öÁ¢¼Ó¿Ï·á\n";
+        Statetext.text+="OnConnectedToMaster\n";
        PhotonNetwork.LocalPlayer.NickName = "DDE";
+       ProgressBar.fillAmount=0.2f;
     }
-    //³×Æ®¿öÅ© ¼­¹ö ¿¬°á Á¾·á
+    //ë„¤íŠ¸ì›Œí¬ ì„œë²„ ì—°ê²° ì¢…ë£Œ
     public void Disconnect() => PhotonNetwork.Disconnect();
-    public override void OnDisconnected(DisconnectCause cause) => Statetext.text = "¿¬°á ²÷±è";
-    //·Îºñ Âü°¡ÇÏ±â(´ëÇü °ÔÀÓÀÌ ¾Æ´Ñ ÀÌ¶û ·Îºñ´Â ÇÏ³ª¸¸ »ç¿ë)
+    public override void OnDisconnected(DisconnectCause cause) => Statetext.text += "OnDisconnected\n";
+    //ë¡œë¹„ ì°¸ê°€í•˜ê¸°(ëŒ€í˜• ê²Œì„ì´ ì•„ë‹Œ ì´ë‘ ë¡œë¹„ëŠ” í•˜ë‚˜ë§Œ ì‚¬ìš©)
     public void JoinLobby() => PhotonNetwork.JoinLobby();
-    public override void OnJoinedLobby() => Statetext.text += "·ÎºñÁ¢¼Ó¿Ï·á";
-    //¹æ¸¸µé±â ¹æÀÌ¸§, ÃÖ´ëÀÎ¿øÀ» ¼³Á¤
+    public override void OnJoinedLobby() {
+        Statetext.text += "OnJoinedLobby\n";
+       ProgressBar.fillAmount=0.4f;
+    } 
+    //ë°©ë§Œë“¤ê¸° ë°©ì´ë¦„, ìµœëŒ€ì¸ì›ì„ ì„¤ì •
     public void CreateRoom() => PhotonNetwork.CreateRoom("ROOT", new RoomOptions { MaxPlayers =10 });
-    //Äİ¹éÇÔ¼ö - »ı¼º ¿Ï·á½Ã
-    public override void OnCreatedRoom() => Statetext.text += "¹æ¸¸µé±â¿Ï·á";
-    //Äİ¹éÇÔ¼ö - »ı¼º ½ÇÆĞ½Ã
-    public override void OnCreateRoomFailed(short returnCode, string message) => Statetext.text = "¹æ¸¸µé±â½ÇÆĞ";
-    //¹æÂü°¡ÇÏ±â
+    //ì½œë°±í•¨ìˆ˜ - ìƒì„± ì™„ë£Œì‹œ
+    public override void OnCreatedRoom() {
+        Statetext.text += "OnCreatedRoom\n";
+       ProgressBar.fillAmount=0.4f;
+    } 
+    //ì½œë°±í•¨ìˆ˜ - ìƒì„± ì‹¤íŒ¨ì‹œ
+    public override void OnCreateRoomFailed(short returnCode, string message) => Statetext.text += "OnCreateRoomFailed\n";
+    //ë°©ì°¸ê°€í•˜ê¸°
     public void JoinRoom() => PhotonNetwork.JoinRoom("ROOT");
-    //Âü°¡ ¿Ï·á½Ã Äİ¹éÇÔ¼ö
-    public override void OnJoinedRoom() => Statetext.text += "¹æÂü°¡¿Ï·á";
-    //Âü°¡ ½ÇÆĞ½Ã Äİ¹éÇÔ¼ö
-    public override void OnJoinRoomFailed(short returnCode, string message) => Statetext.text ="¹æÂü°¡½ÇÆĞ";
-    //¹æ »ı¼º/Âü°¡ÇÏ±â(¹æÀÌ¸§ÀÌ ÀÖ´Ù¸é, »ı¼ºÇÏ°í ¾Æ´Ï¸é Âü°¡) - Äİ¹é ÇÔ¼ö´Â À§¿Í µ¿ÀÏ
+    //ì°¸ê°€ ì™„ë£Œì‹œ ì½œë°±í•¨ìˆ˜
+    public override void OnJoinedRoom() {
+      Statetext.text += "OnJoinedRoom\n"; 
+       ProgressBar.fillAmount=0.8f;
+    } 
+    //ì°¸ê°€ ì‹¤íŒ¨ì‹œ ì½œë°±í•¨ìˆ˜
+    public override void OnJoinRoomFailed(short returnCode, string message) => Statetext.text +="OnJoinRoomFailed\n";
+    //ë°© ìƒì„±/ì°¸ê°€í•˜ê¸°(ë°©ì´ë¦„ì´ ìˆë‹¤ë©´, ìƒì„±í•˜ê³  ì•„ë‹ˆë©´ ì°¸ê°€) - ì½œë°± í•¨ìˆ˜ëŠ” ìœ„ì™€ ë™ì¼
     //public void JoinOrCreateRoom() => PhotonNetwork.JoinOrCreateRoom(roomInput.text, new RoomOptions { MaxPlayers = 2 }, null);
-    //¹æ ·£´ı Âü°¡ÇÏ±â
+    //ë°© ëœë¤ ì°¸ê°€í•˜ê¸°
     public void JoinRandomRoom() => PhotonNetwork.JoinRandomRoom();
-    //Äİ¹éÇÔ¼ö - ¹æÂü°¡½ÇÆĞ½Ã
-    public override void OnJoinRandomFailed(short returnCode, string message) => Statetext.text = "¹æ·£´ıÂü°¡½ÇÆĞ";
-    //¹æ ¶°³ª±â
+    //ì½œë°±í•¨ìˆ˜ - ë°©ì°¸ê°€ì‹¤íŒ¨ì‹œ
+    public override void OnJoinRandomFailed(short returnCode, string message) => Statetext.text += "OnJoinRandomFailed\n";
+    //ë°© ë– ë‚˜ê¸°
     public void LeaveRoom() => PhotonNetwork.LeaveRoom();
 
-    void Start()
-    {
-        Statetext = "";
+    void Start()=> StartCoroutine("CONNECT");
+    IEnumerator CONNECT(){
         Connect();
-        JoinLobby();
-        CreateRoom();
-        JoinRoom();
-        CreateRoom();
+        yield return new WaitForSeconds(3f);
+        StartCoroutine("JOINLOBBY");
     }
-    void StartLoad()
+    IEnumerator JOINLOBBY(){
+        JoinLobby();
+        yield return new WaitForSeconds(1f);
+        StartCoroutine("CREATEROOM");
+    }
+        IEnumerator CREATEROOM(){
+        CreateRoom();
+        yield return new WaitForSeconds(1f);
+        StartCoroutine("JOINROOM");
+    }
+        IEnumerator JOINROOM(){
+        //JoinRoom();
+        yield return new WaitForSeconds(1f);
+        Statetext.text += PhotonNetwork.LocalPlayer.NickName+ "ë‹˜, ì¤€ë¹„ê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.\n";
+        loadingTextScript.StopAni();
+        MainStatetext.text="ì¤€ë¹„ì™„ë£Œ~!";
+       ProgressBar.fillAmount=1f;
+    }
+    void Info()
     {
-        Statetext = "";
-        Connect();
-        JoinLobby();
-        JoinRoom();
+        if (PhotonNetwork.InRoom)
+        {
+            print("í˜„ì¬ ë°© ì´ë¦„ : " + PhotonNetwork.CurrentRoom.Name);
+            print("í˜„ì¬ ë°© ì¸ì›ìˆ˜ : " + PhotonNetwork.CurrentRoom.PlayerCount);
+            print("í˜„ì¬ ë°© ìµœëŒ€ì¸ì›ìˆ˜ : " + PhotonNetwork.CurrentRoom.MaxPlayers);
+
+            string playerStr = "ë°©ì— ìˆëŠ” í”Œë ˆì´ì–´ ëª©ë¡ : ";
+            for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++) playerStr += PhotonNetwork.PlayerList[i].NickName + ", ";
+            print(playerStr);
+        }
+        else
+        {
+            print("ì ‘ì†í•œ ì¸ì› ìˆ˜ : " + PhotonNetwork.CountOfPlayers);
+            print("ë°© ê°œìˆ˜ : " + PhotonNetwork.CountOfRooms);
+            print("ëª¨ë“  ë°©ì— ìˆëŠ” ì¸ì› ìˆ˜ : " + PhotonNetwork.CountOfPlayersInRooms);
+            print("ë¡œë¹„ì— ìˆëŠ”ì§€? : " + PhotonNetwork.InLobby);
+            print("ì—°ê²°ëëŠ”ì§€? : " + PhotonNetwork.IsConnected);
+        }
     }
-    */
 }

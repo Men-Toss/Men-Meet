@@ -630,6 +630,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a789321c4305a4ca2ac5f6c9310465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainStatetext: {fileID: 300880697}
+  Statetext: {fileID: 1421834320}
+  ProgressBar: {fileID: 797226104}
+  StartButton: {fileID: 363265144}
+  loadingTextScript: {fileID: 699997672}
 --- !u!1 &973561997
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.22
-  m_Text: "~~~~\uD558\uB294\uC911\n~~~~\uD558\uB294\uC911\n~~~~\uD558\uB294\uC911\n~~~~\uD558\uB294\uC911\n~~~~\uD558\uB294\uC911"
+  m_Text: 
 --- !u!222 &1421834321
 CanvasRenderer:
   m_ObjectHideFlags: 0

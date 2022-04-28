@@ -17,4 +17,7 @@ public class LoadingTextScript : MonoBehaviour
 
         Invoke("PlusMain", 0.25f);   
     }
+    public void StopAni(){
+        CancelInvoke();
+    }
 }
