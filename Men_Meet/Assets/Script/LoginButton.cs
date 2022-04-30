@@ -1,17 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 public class LoginButton : MonoBehaviour
 {
+    [SerializeField] private InputField UIDInputText;
+    [SerializeField] private InputField UPWInputText;
     [SerializeField] string Signup;
     [SerializeField] string Introduce;
+    [SerializeField] private GameObject FailedPanel;
     
-   //È¸¿ø °¡ÀÔ ¸µÅ© Å¬¸¯½Ã
+    //íšŒì›ê°€ì… ë²„íŠ¼ í´ë¦­ ì‹œ 
    public void SignupClick() => Application.OpenURL(Signup);
-    //·Î±×ÀÎ ¹öÆ° Å¬¸¯½Ã
-    public void LoginClick() => SceneManager.LoadScene(1);
-    //ÇÁ·ÎÁ§Æ® ¼Ò°³ ÆäÀÌÁö Å¬¸¯½Ã
+    //ë¡œê·¸ì¸ ë²„íŠ¼ í´ë¦­ ì‹œ
+    public void LoginClick() => StartCoroutine(Login());
+    //Men-Meetì†Œê°œ í…ìŠ¤íŠ¸ í´ë¦­
     public void IntroduceClick() => Application.OpenURL(Introduce);
+    //ë¡œê·¸ì¸ ì‹¤íŒ¨ ì•ˆë‚´ í†µì§€ë©”ì„¸ì§€
+    public void ShowFailedPanel() => FailedPanel.SetActive(true);
+
+    public void CloseFailedPanel() => FailedPanel.SetActive(false);
+    //ë¡œê·¸ì¸ ì½”ë£¨í‹´
+    public IEnumerator Login()
+    {
+        string serverid = "UID="+UIDInputText.text;
+        string serverpw = "UPW="+UPWInputText.text;
+        string serverPath = "http://mentoss123.cafe24.com/SungjinTest/LoginTest.jsp?"+serverid+"&"+serverpw;
+        Debug.Log(serverPath);
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(serverPath)) 
+        {
+            yield return webRequest.SendWebRequest(); 
+                
+            if (webRequest.isNetworkError || webRequest.isHttpError){
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                string result = webRequest.downloadHandler.text;
+                Debug.Log(result);
+
+                if (result.Trim().Equals("Correct"))
+                {
+                    Debug.Log("ë¡œê·¸ì¸ ì„±ê³µí–ˆìŠµë‹ˆë‹¤.");
+                }
+                else
+                {
+                    Debug.Log("ë¡œê·¸ì¸ ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.");
+                    ShowFailedPanel();
+                }
+
+                UIDInputText.text = "";
+                UPWInputText.text = "";
+            }
+        }
+    }
 }
