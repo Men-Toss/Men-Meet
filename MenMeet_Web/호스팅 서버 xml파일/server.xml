@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Server port="8330" shutdown="SHUTDOWN">
+  <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+
+  <GlobalNamingResources>
+
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+
+    <!-- Mysql JNDI -->
+   <Resource name="jdbc/mentoss123"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://mentoss123.cafe24.com/mentoss123"
+              username="mentoss123"
+              password="menmeet456"
+              maxActive="20"
+              maxIdle="10"
+              maxWait="3000"/>
+
+    <!-- Oracle JNDI -->
+    <!-- Resource name="jdbc/mentoss123"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:thin:@IP:1521:ORCL"
+              username="dbuser"
+              password="dbpasswd"
+              maxActive="10"
+              maxIdle="5"
+              maxWait="3000"/ -->
+
+  </GlobalNamingResources>
+
+  <Service name="mentoss123">
+
+    <!-- Do not modify the specified port number! -->
+    <Connector uriencoding="UTF-8" port="8329" protocol="HTTP/1.1"
+               connectionTimeout="20000" />
+
+    <Engine name="mentoss123" defaultHost="mentoss123.cafe24.com">
+
+      <Realm className="org.apache.catalina.realm.LockOutRealm">
+        <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+               resourceName="UserDatabase"/>
+      </Realm>
+
+      <Host name="mentoss123.cafe24.com"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
+      </Host>
+
+    </Engine>
+
+  </Service>
+
+</Server>
