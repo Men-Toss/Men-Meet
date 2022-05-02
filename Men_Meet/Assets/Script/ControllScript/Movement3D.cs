@@ -8,6 +8,8 @@ public class Movement3D : MonoBehaviour
     Animator _animator;
     Camera _camera;
     CharacterController _controller;
+    //중력 계수
+    public float gravity = -9.8f; 
     //사용자 스피드
     public float speed = 5f;
     //플레이어 달리기 스피드
@@ -52,6 +54,7 @@ public class Movement3D : MonoBehaviour
 
     void InputMovement()
     {
+        
         //플레이어 스피드 결정
         finalSpeed = (isRun) ? runSpeed : speed;
         //움직임 구현
@@ -60,6 +63,13 @@ public class Movement3D : MonoBehaviour
 
         Vector3 movedDirection = forward * Input.GetAxisRaw("Vertical") + right * Input.GetAxisRaw("Horizontal");
 
+        //플레이어 중력 설정
+        movedDirection.y += gravity*2 * Time.deltaTime;
         _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
+        
+        
+        //Blend애니메이션
+        float percent = ((isRun) ? 1f : 0.5f) * movedDirection.magnitude;
+        _animator.SetFloat("Blend",percent,0.1f,Time.deltaTime);
     }
 }
