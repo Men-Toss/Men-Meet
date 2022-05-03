@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CharChoosePrefab : MonoBehaviour
 {
    public Image image;
-    public int Code;
-    public void SetImg(Sprite sprite) => image.sprite = sprite;
+   public string code;
+   public void setImg(Sprite sprite) => image.sprite = sprite;
+   public void setCode(string s) => code = s;
 }

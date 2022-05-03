@@ -38,6 +38,8 @@ public class Movement3D : MonoBehaviour
         //왼쪽 Shift 누를 시
         if (Input.GetKey(KeyCode.LeftShift)) isRun = true;
         else isRun = false;
+        //SpaceBar 누를 시
+        if (Input.GetKey(KeyCode.Space)) _animator.SetTrigger("Jumping");
         
         //매 프레임에 동작할 함수 실행
         InputMovement();
@@ -66,7 +68,6 @@ public class Movement3D : MonoBehaviour
         //플레이어 중력 설정
         movedDirection.y += gravity*2 * Time.deltaTime;
         _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
-        
         
         //Blend애니메이션
         float percent = ((isRun) ? 1f : 0.5f) * movedDirection.magnitude;
