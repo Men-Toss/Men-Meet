@@ -22,6 +22,12 @@ public class UserStateScript : MonoBehaviour
         get { return userNickName; }
         set { userNickName = value; }
     }
+    //유저 캐릭터 코드/스킨/의상 색상정보
+    public string userCharCode;
+    public int userSkin;
+    public int userCloth;
+    
+    
     //씬 이동해도 오브젝트 파괴 X
     void Awake() => DontDestroyOnLoad(gameObject);
 }

@@ -9,4 +9,8 @@ public class CharChoosePrefab : MonoBehaviour
    public string code;
    public void setImg(Sprite sprite) => image.sprite = sprite;
    public void setCode(string s) => code = s;
+   public string getCode()
+   {
+      return code;
+   }
 }

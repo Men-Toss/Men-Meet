@@ -119,7 +119,6 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XmlSerializer.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XPath.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XPath.XDocument.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.InputSystem.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.PlasticSCM.Editor.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Rider.Editor.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.TextMeshPro.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.TextMeshPro.Editor.dll
@@ -208,9 +207,6 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Cecil.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.TestRunner.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\nunit.framework.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.TestRunner.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\unityplastic.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Plastic.Newtonsoft.Json.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Plastic.Antlr3.Runtime.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonUnityNetworking.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonChat.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonUnityNetworking.Demos.pdb
@@ -309,12 +305,11 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.UI.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.InputSystem.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Rider.Editor.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.UI.pdb
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.PlasticSCM.Editor.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.TestRunner.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.TestRunner.pdb
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\unityplastic.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\Assembly-CSharp.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\Assembly-CSharp.pdb
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\com.ben-w.erp.pdb
