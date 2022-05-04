@@ -86,13 +86,13 @@
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\AssetStore\simple modular human\scripts\clothing.cs" />
-     <Compile Include="Assets\Script\LobbySceneScript\CharactorManage.cs" />
+     <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+     <Compile Include="Assets\Script\MainSceneScript\MainSceneChactorManage.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraMovement.cs" />
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <Compile Include="Assets\Script\MainSceneScript\MainSceneChactorManage.cs" />
      <None Include="Assets\AssetStore\simple modular human\readMe.txt" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />

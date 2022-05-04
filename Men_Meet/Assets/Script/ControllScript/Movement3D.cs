@@ -23,6 +23,8 @@ public class Movement3D : MonoBehaviour
     //달리는지 체크 
     public bool isRun = false;
     public float jumpForce=20f;
+    //땅에 닿았는지 체크
+    public bool isGround = true;
     void Start()
     {
         _animator = this.GetComponent<Animator>();
@@ -73,7 +75,7 @@ public class Movement3D : MonoBehaviour
         }
         
         //플레이어 중력 설정
-        movedDirection.y += gravity*2 * Time.deltaTime;
+        movedDirection.y += gravity;
         _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
         
         //Blend애니메이션
