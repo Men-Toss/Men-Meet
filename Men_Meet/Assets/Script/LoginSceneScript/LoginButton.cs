@@ -46,11 +46,13 @@ public class LoginButton : MonoBehaviour
             else
             {
                 string result = webRequest.downloadHandler.text;
+                string[] resultCmd = result.Split('$');
                 Debug.Log(result);
 
-                if (result.Trim().Equals("Correct"))
+                if (resultCmd[0].Trim().Equals("Correct"))
                 {
                     Debug.Log("로그인 성공했습니다.");
+                    stateScript.UserNickName = resultCmd[1].Trim();
                     LoginSucceed();
                 }
                 else
@@ -68,7 +70,6 @@ public class LoginButton : MonoBehaviour
     void LoginSucceed()
     {
         stateScript.UserId = UIDInputText.text;
-        stateScript.UserNickName = "더듬이";
         SceneManager.LoadScene(1);
     }
 }

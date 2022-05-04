@@ -1,6 +1,5 @@
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonUnityNetworking.Utilities.Culling.Editor.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonUnityNetworking.Utilities.Culling.Editor.pdb
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\log4netPlastic.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Microsoft.CSharp.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Microsoft.Win32.Primitives.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\mscorlib.dll
@@ -119,8 +118,6 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XmlDocument.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XmlSerializer.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XPath.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Xml.XPath.XDocument.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Plastic.Antlr3.Runtime.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Plastic.Newtonsoft.Json.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.CoreModule.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.Graphs.dll
@@ -201,7 +198,6 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.VirtualTexturingMo
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.VRModule.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.WindModule.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEngine.XRModule.dll
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\unityplastic.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\websocket-sharp.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonUnityNetworking.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\PhotonRealtime.dll
@@ -284,7 +280,6 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.UIElementsModule.x
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.UIElementsSamplesModule.xml
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.UIServiceModule.xml
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.UnityConnectModule.xml
-C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\unityplastic.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Photon3Unity3D.pdb
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Photon3Unity3D.xml
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\UnityEditor.UI.pdb
@@ -298,3 +293,4 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.Utilities.Cul
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.Utilities.Culling.Editor.csproj.CopyComplete
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.Utilities.Culling.Editor.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.Utilities.Culling.Editor.pdb
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\System.Configuration.dll

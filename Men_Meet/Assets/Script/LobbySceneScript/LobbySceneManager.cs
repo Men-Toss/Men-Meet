@@ -8,10 +8,12 @@ public class LobbySceneManager : MonoBehaviour
 {
     [SerializeField] private Text welcomeText;
     [SerializeField] private Text subText;
-    private void Start()
+    
+    //사용자 정보 닉네임 불러와서 텍스트 교체 
+    private void Awake()
     {
-        //string userNickname = GameObject.Find("UserManager").GetComponent<UserStateScript>().UserNickName;
-        //welcomeText.text = "안녕하세요! " + userNickname + "님!";
-        //subText.text = userNickname+"님의 캐릭터";
+        string userNickname = GameObject.Find("UserManager").GetComponent<UserStateScript>().UserNickName;
+        welcomeText.text = "안녕하세요! " + userNickname + "님!";
+        subText.text = userNickname+"님의 캐릭터";
     }
 }
