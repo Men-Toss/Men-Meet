@@ -6,10 +6,10 @@ public class MainSceneChactorManage : MonoBehaviour
 {
     //사용자 게임 오브젝트
     public GameObject userCharactor;
-    private UserStateScript _stateScript = GameObject.Find("UserManager").GetComponent<UserStateScript>();
+    private UserStateScript _stateScript;
     //메테리얼 배열
     public Material[] charTexture = new Material[18];
-    //현재 선택인덱스
+    //현재 선택인덱스  
     public int selectedChar = 0;
     void Awake()
     {

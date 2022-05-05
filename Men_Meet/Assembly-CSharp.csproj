@@ -70,7 +70,6 @@
      <Compile Include="Assets\Script\ControllScript\Movement3D.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbyButton.cs" />
-     <Compile Include="Assets\AssetStore\simple modular human\scripts\Test_script.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
@@ -79,13 +78,13 @@
      <Compile Include="Assets\Script\UserScript\UserStateScript.cs" />
      <Compile Include="Assets\Script\ScreenScript\ScreenManage.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+     <Compile Include="Assets\AssetStore\_Heathen Engineering\Samples\UX Examples\Flat Icons [Free]\ToggleSetAnimatorBoolean.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
      <Compile Include="Assets\Script\NetWorkScript\PhotonManageScript.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbySceneManager.cs" />
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-     <Compile Include="Assets\AssetStore\simple modular human\scripts\clothing.cs" />
      <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Script\MainSceneScript\MainSceneChactorManage.cs" />
@@ -93,13 +92,13 @@
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <None Include="Assets\AssetStore\simple modular human\readMe.txt" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />
      <None Include="Assets\AssetStore\StarterAssets\license.txt" />
      <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
      <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
+     <None Include="Assets\AssetStore\_Heathen Engineering\Documentation\UX\Flat Icons [Free]\Read Me.txt" />
      <None Include="Assets\AssetStore\POLYGON city pack\Read_me.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\ArmatureShader.shader" />
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />

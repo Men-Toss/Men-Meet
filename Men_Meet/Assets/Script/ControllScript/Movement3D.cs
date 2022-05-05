@@ -66,18 +66,20 @@ public class Movement3D : MonoBehaviour
 
         Vector3 movedDirection = forward * Input.GetAxisRaw("Vertical") + right * Input.GetAxisRaw("Horizontal");
 
-        
+        /*
         //SpaceBar 누를 시
         if (Input.GetKey(KeyCode.Space))
         {
             _animator.SetTrigger("Jumping");
-            movedDirection.y = jumpForce;
+            //movedDirection.y = jumpForce;
         }
-        
+        */
         //플레이어 중력 설정
-        movedDirection.y += gravity;
-        _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
+        //movedDirection.y += gravity;
+         
         
+        _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
+       
         //Blend애니메이션
         float percent = ((isRun) ? 1f : 0.5f) * movedDirection.magnitude;
         _animator.SetFloat("Blend",percent,0.05f,Time.deltaTime);
