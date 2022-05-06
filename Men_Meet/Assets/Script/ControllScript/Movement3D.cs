@@ -25,6 +25,21 @@ public class Movement3D : MonoBehaviour
     public float jumpForce=20f;
     //땅에 닿았는지 체크
     public bool isGround = true;
+    private bool IsCheckGrounded()
+    {
+        // CharacterController.IsGrounded가 true라면 Raycast를 사용하지 않고 판정 종료
+        if (_controller.isGrounded) return true;
+        // 발사하는 광선의 초기 위치와 방향
+        // 약간 신체에 박혀 있는 위치로부터 발사하지 않으면 제대로 판정할 수 없을 때가 있다.
+        var ray = new Ray(this.transform.position + Vector3.up * 0.1f, Vector3.down);
+        // 탐색 거리
+        var maxDistance = 1.3f;
+        // 광선 디버그 용도
+        Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * maxDistance, Color.blue);
+        // Raycast의 hit 여부로 판정
+        // 지상에만 충돌로 레이어를 지정
+        return Physics.Raycast(ray, maxDistance, 3);
+    }
     void Start()
     {
         _animator = this.GetComponent<Animator>();
@@ -66,18 +81,18 @@ public class Movement3D : MonoBehaviour
 
         Vector3 movedDirection = forward * Input.GetAxisRaw("Vertical") + right * Input.GetAxisRaw("Horizontal");
 
-        /*
+        Debug.Log(IsCheckGrounded());
+        
         //SpaceBar 누를 시
         if (Input.GetKey(KeyCode.Space))
         {
             _animator.SetTrigger("Jumping");
             //movedDirection.y = jumpForce;
         }
-        */
-        //플레이어 중력 설정
-        //movedDirection.y += gravity;
-         
         
+        //플레이어 중력 설정
+       // movedDirection.y += gravity;
+         
         _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
        
         //Blend애니메이션
