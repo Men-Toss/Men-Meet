@@ -63,7 +63,6 @@
      <Compile Include="Assets\Script\NetWorkScript\NetWorkManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
-     <Compile Include="Assets\Script\LobbySceneScript\LobbyCharPrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Script\LoadingScene\LoadingTextScript.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
@@ -92,6 +91,8 @@
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+     <Compile Include="Assets\Script\TestScreen.cs" />
+     <Compile Include="Assets\Script\MainSceneScript\InstatiateCallback.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />

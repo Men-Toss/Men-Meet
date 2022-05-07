@@ -2,12 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Realtime;
+using Photon.Pun;
 
 public class Movement3D : MonoBehaviour
 {
     Animator _animator;
     Camera _camera;
     CharacterController _controller;
+    //포톤 뷰
+    public PhotonView PV;
     //중력 계수
     public float gravity = -9.8f; 
     //사용자 스피드
@@ -50,15 +54,18 @@ public class Movement3D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //왼쪽 ALT 누를 시
-        if (Input.GetKey(KeyCode.LeftAlt)) toggleCameraRotation = true;
-        else toggleCameraRotation = false;
-        //왼쪽 Shift 누를 시
-        if (Input.GetKey(KeyCode.LeftShift)) isRun = true;
-        else isRun = false;
-        
-        //매 프레임에 동작할 함수 실행
-        InputMovement();
+        if (PV.IsMine)
+        {
+            //왼쪽 ALT 누를 시
+            if (Input.GetKey(KeyCode.LeftAlt)) toggleCameraRotation = true;
+            else toggleCameraRotation = false;
+            //왼쪽 Shift 누를 시
+            if (Input.GetKey(KeyCode.LeftShift)) isRun = true;
+            else isRun = false;
+
+            //매 프레임에 동작할 함수 실행
+            InputMovement();
+        }
     }
     //업데이트 함수 실행 후 호출
     void LateUpdate()

@@ -828,6 +828,9 @@ MonoBehaviour:
   userID: 
   userNickName: 
   userStartPoint: 0
+  userCharCode: 
+  userSkin: 0
+  userCloth: 0
 --- !u!4 &489572190
 Transform:
   m_ObjectHideFlags: 0

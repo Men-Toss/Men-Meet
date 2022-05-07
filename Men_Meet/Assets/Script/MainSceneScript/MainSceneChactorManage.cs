@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class MainSceneChactorManage : MonoBehaviour
 {
@@ -11,12 +13,16 @@ public class MainSceneChactorManage : MonoBehaviour
     public Material[] charTexture = new Material[18];
     //현재 선택인덱스  
     public int selectedChar = 0;
+    //카메라가 보는 오브젝트 설정
+    public CameraMovement CM;
+    public InstatiateCallback _callback;
     void Awake()
     {
-        _stateScript = GameObject.Find("UserManager").GetComponent<UserStateScript>();
-        loadCharactor(_stateScript.userCharCode,_stateScript.userSkin,_stateScript.userCloth);
+       // _stateScript = GameObject.Find("UserManager").GetComponent<UserStateScript>();
+      //  loadCharactor(_stateScript.userCharCode,_stateScript.userSkin,_stateScript.userCloth);
+        PhotonNetwork.Instantiate("Player",new Vector3(-323f,70f,45f),Quaternion.identity);
     }
-
+    
     //메타버스 월드 처음 입장 시 캐릭터 정보 
     public void loadCharactor(string charCode,int skin,int cloth)
     {
