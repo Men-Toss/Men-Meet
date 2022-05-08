@@ -69,7 +69,6 @@
      <Compile Include="Assets\Script\ControllScript\Movement3D.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbyButton.cs" />
-     <Compile Include="Assets\Script\MainSceneScript\MainSceneNetWorkManage.cs" />
      <Compile Include="Assets\Script\MainSceneScript\MainCharLoad.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
@@ -88,14 +87,13 @@
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
+     <Compile Include="Assets\RPCtest\Test.cs" />
      <Compile Include="Assets\Script\MainSceneScript\InstatiateCallback.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-     <Compile Include="Assets\Script\MainSceneScript\MainSceneChactorManage.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraMovement.cs" />
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <Compile Include="Assets\RPCtest\Test.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />

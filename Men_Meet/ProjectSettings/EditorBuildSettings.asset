@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnterScene.unity
     guid: 95cf86a7fa512684791f1e28eb701123
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LoadingScene.unity
     guid: b09964a4d9515f14387718556cf64519
   - enabled: 1

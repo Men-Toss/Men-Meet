@@ -10,7 +10,6 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public Text MainStatetext;
     public Text Statetext;
     public Image ProgressBar;
-    public Button StartButton;
     public LoadingTextScript loadingTextScript;
     //네트워크 서버 연결
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
@@ -52,7 +51,8 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
        loadingTextScript.StopAni();
        MainStatetext.text="준비완료~!";
        ProgressBar.fillAmount=1f;
-       StartButton.gameObject.SetActive(true);
+       
+       PhotonNetwork.Instantiate("Player",new Vector3(-323f,70f,45f),Quaternion.identity);
     } 
     //참가 실패시 콜백함수
     public override void OnJoinRoomFailed(short returnCode, string message) => Statetext.text +="OnJoinRoomFailed\n";
@@ -66,7 +66,6 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public void LeaveRoom() => PhotonNetwork.LeaveRoom();
     void Start() {
     Connect();
-    StartButton.gameObject.SetActive(false);
     } 
 
     void Info()
