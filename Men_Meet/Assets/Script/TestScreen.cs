@@ -7,6 +7,6 @@ public class TestScreen : MonoBehaviour
 {
     private void Awake()
     {
-        Screen.SetResolution(480,270,false);
+        Screen.SetResolution(960,540,false);
     }
 }

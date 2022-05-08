@@ -10,7 +10,9 @@ ScriptsOnlyBuild:
     - LobbyButton
     - LobbySceneManager
     - LoginButton
+    - MainCharLoad
     - MainSceneChactorManage
+    - MainSceneNetWorkManage
     - Movement3D
     - PhotonManageScript
     - ScreenManage
@@ -96,15 +98,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3442}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 4742}
+      Script: {instanceID: 4744}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,17 +153,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3004}
     - Class: 114
       Script: {instanceID: 4096}
     - Class: 114
-      Script: {instanceID: 4734}
+      Script: {instanceID: 4736}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -218,15 +220,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2264}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2706}
-    - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3394}
     - Class: 114
       Script: {instanceID: 3812}
     - Class: 114
@@ -236,7 +236,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4450}
     - Class: 114
-      Script: {instanceID: 4742}
+      Script: {instanceID: 4744}
+    - Class: 114
+      Script: {instanceID: 99072}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -315,17 +317,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2652}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2834}
+    - Class: 114
+      Script: {instanceID: 2996}
+    - Class: 114
+      Script: {instanceID: 3004}
     - Class: 114
       Script: {instanceID: 3006}
-    - Class: 114
-      Script: {instanceID: 3008}
     - Class: 114
       Script: {instanceID: 3608}
     - Class: 114
@@ -347,9 +351,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4580}
     - Class: 114
-      Script: {instanceID: 4750}
+      Script: {instanceID: 4752}
     - Class: 114
-      Script: {instanceID: 5084}
+      Script: {instanceID: 5086}
+    - Class: 114
+      Script: {instanceID: 89890}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,15 +434,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2652}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3394}
+    - Class: 114
+      Script: {instanceID: 3484}
     - Class: 114
       Script: {instanceID: 3812}
     - Class: 114
@@ -444,11 +452,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4580}
     - Class: 114
-      Script: {instanceID: 4614}
+      Script: {instanceID: 4616}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 4656}
     - Class: 114
-      Script: {instanceID: 645246}
+      Script: {instanceID: 89890}
+    - Class: 114
+      Script: {instanceID: 789420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1507,6 +1517,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestScreen
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
@@ -2142,7 +2158,7 @@ ScriptsOnlyBuild:
     className: TextToggleIsOnTransition
   - hash:
       serializedVersion: 2
-      Hash: f01b1491a7f7a961ac5201f4d83831dd
+      Hash: 78c2e213f7a026e5f13e78f0cbe664c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainSceneChactorManage
@@ -2394,10 +2410,16 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: b237f2ee4a2f8e8d4b2b06f535b752cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TestScreen
+    className: MainCharLoad
+  - hash:
+      serializedVersion: 2
+      Hash: 02d2f6fd5a5ff5d7d542b894745bd6b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainSceneNetWorkManage
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginScene.unity

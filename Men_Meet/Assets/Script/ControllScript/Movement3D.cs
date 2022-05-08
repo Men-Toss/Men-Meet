@@ -49,6 +49,8 @@ public class Movement3D : MonoBehaviour
         _animator = this.GetComponent<Animator>();
         _camera=Camera.main;
         _controller = this.GetComponent<CharacterController>();
+        
+       // PV.RPC("loadChar",RpcTarget.AllBuffered);
     }
 
     // Update is called once per frame
@@ -88,7 +90,7 @@ public class Movement3D : MonoBehaviour
 
         Vector3 movedDirection = forward * Input.GetAxisRaw("Vertical") + right * Input.GetAxisRaw("Horizontal");
 
-        Debug.Log(IsCheckGrounded());
+    //Debug.Log(IsCheckGrounded());
         
         //SpaceBar 누를 시
         if (Input.GetKey(KeyCode.Space))
