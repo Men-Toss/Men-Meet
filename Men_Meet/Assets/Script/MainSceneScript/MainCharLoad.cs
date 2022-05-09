@@ -6,24 +6,25 @@ using Photon.Realtime;
 
 public class MainCharLoad : MonoBehaviour
 {
-    /*
+    
     private UserStateScript _stateScript;
     //메테리얼 배열
     public Material[] charTexture = new Material[18];
     //현재 선택인덱스  
     public int selectedChar = 0;
+    public PhotonView PV;
     
-    
+    /*
     [PunRPC]
     public void loadChar()
     {
-        
-        _stateScript = GameObject.Find("UserManager").GetComponent<UserStateScript>();
-        loadCharactor(_stateScript.userCharCode,_stateScript.userSkin,_stateScript.userCloth);
-        GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
-            gameObject.transform;       
+        Debug.Log("loadChar실행됨"+_stateScript.userCharCode.ToString()+" "+_stateScript.userSkin.ToString()+" "+_stateScript.userCloth);
+        //_stateScript = GameObject.Find("UserManager").GetComponent<UserStateScript>();
+        //loadCharactor(_stateScript.userCharCode,_stateScript.userSkin,_stateScript.userCloth);
+        //GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
+        //    gameObject.transform;       
     }
-    
+    */
     
     //메타버스 월드 처음 입장 시 캐릭터 정보 
     public void loadCharactor(string charCode,int skin,int cloth)
@@ -141,5 +142,5 @@ public class MainCharLoad : MonoBehaviour
         gameObject.transform.GetChild(selectedChar).gameObject
             .GetComponent<SkinnedMeshRenderer>().material = charTexture[cloth * 3 + skin];
     }
-    */
+    
 }
