@@ -3,28 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.TestTools;
 
 public class MainCharLoad : MonoBehaviour
 {
     
-    private UserStateScript _stateScript;
+    //사용자 캐릭터,스킨,의상코드
+    public string charCode;
+    public int skinCode;
+    public int clothCode;
     //메테리얼 배열
     public Material[] charTexture = new Material[18];
     //현재 선택인덱스  
     public int selectedChar = 0;
     public PhotonView PV;
+
+    void Start()
+    {
+        charCode = PV.InstantiationData[0].ToString();
+        skinCode = int.Parse(PV.InstantiationData[1].ToString());
+        clothCode = int.Parse(PV.InstantiationData[2].ToString());
+        
+        if(PV.IsMine)
+        GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
+            gameObject.transform.GetChild(36).transform;
+        
+        PV.RPC("loadChar",RpcTarget.AllBuffered);
+        
+    }
     
-    /*
     [PunRPC]
     public void loadChar()
     {
-        Debug.Log("loadChar실행됨"+_stateScript.userCharCode.ToString()+" "+_stateScript.userSkin.ToString()+" "+_stateScript.userCloth);
-        //_stateScript = GameObject.Find("UserManager").GetComponent<UserStateScript>();
-        //loadCharactor(_stateScript.userCharCode,_stateScript.userSkin,_stateScript.userCloth);
-        //GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
-        //    gameObject.transform;       
+        loadCharactor(charCode,skinCode,clothCode);
+        
     }
-    */
+    
     
     //메타버스 월드 처음 입장 시 캐릭터 정보 
     public void loadCharactor(string charCode,int skin,int cloth)

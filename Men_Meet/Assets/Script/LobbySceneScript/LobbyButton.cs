@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
+using Image = UnityEngine.UIElements.Image;
 
 public class LobbyButton : MonoBehaviour
 {
@@ -34,6 +35,12 @@ public class LobbyButton : MonoBehaviour
     public int skinCode=0;
     //캐릭터 의상 코드
     public int clothCode=0;
+    //사운드 버튼
+    public Button soundButton;
+    // 현재 사운드 인덱스 0:음소거 / 1,2 / 3:최대
+    public int soundIndex;
+    //사운드 버튼 이미지 배열
+    public Sprite[] soundSprite = new Sprite[4];
     void Start() => ClickMale();
     
     //남자 캐릭터 인덱스 메소드
@@ -141,5 +148,14 @@ public class LobbyButton : MonoBehaviour
         GameObject.Find("UserManager").GetComponent<UserStateScript>().userSkin = this.skinCode;
         GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth = this.clothCode;
         SceneManager.LoadScene(2); 
+    }
+
+    public void SoundClick()
+    {
+        soundIndex++;
+        if (soundIndex == 4) soundIndex = 0;
+        //LobbySoundScript.setSound(soundIndex);
+
+        soundButton = soundSprite[soundIndex];
     }
 }

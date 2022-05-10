@@ -94,6 +94,8 @@
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+     <Compile Include="Assets\Script\ChattingScript\ChattingMange.cs" />
+     <Compile Include="Assets\Script\LobbySceneScript\LobbySoundScript.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />

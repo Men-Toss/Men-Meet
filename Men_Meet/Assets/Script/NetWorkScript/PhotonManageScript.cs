@@ -51,8 +51,14 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
        loadingTextScript.StopAni();
        MainStatetext.text="준비완료~!";
        ProgressBar.fillAmount=1f;
+
+       string[] charInstan=new string[3];
        
-       PhotonNetwork.Instantiate("Player",new Vector3(-323f,70f,45f),Quaternion.identity);
+       charInstan[0] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCharCode;
+       charInstan[1] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userSkin.ToString();
+       charInstan[2] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth.ToString();
+       
+       PhotonNetwork.Instantiate("Player",new Vector3(-323f,70f,45f),Quaternion.identity,0,charInstan);
     } 
     //참가 실패시 콜백함수
     public override void OnJoinRoomFailed(short returnCode, string message) => Statetext.text +="OnJoinRoomFailed\n";
