@@ -63,43 +63,44 @@
      <Compile Include="Assets\Script\NetWorkScript\NetWorkManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
-     <Compile Include="Assets\Script\LobbySceneScript\LobbyCharPrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Script\LoadingScene\LoadingTextScript.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\Script\ControllScript\Movement3D.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbyButton.cs" />
-     <Compile Include="Assets\AssetStore\simple modular human\scripts\Test_script.cs" />
+     <Compile Include="Assets\Script\MainSceneScript\MainCharLoad.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Script\EnterSceneScript\EnterButtonManager.cs" />
+     <Compile Include="Assets\Script\TestScreen.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Script\UserScript\UserStateScript.cs" />
      <Compile Include="Assets\Script\ScreenScript\ScreenManage.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+     <Compile Include="Assets\AssetStore\_Heathen Engineering\Samples\UX Examples\Flat Icons [Free]\ToggleSetAnimatorBoolean.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
      <Compile Include="Assets\Script\NetWorkScript\PhotonManageScript.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbySceneManager.cs" />
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-     <Compile Include="Assets\AssetStore\simple modular human\scripts\clothing.cs" />
      <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
+     <Compile Include="Assets\RPCtest\Test.cs" />
+     <Compile Include="Assets\Script\MainSceneScript\InstatiateCallback.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-     <Compile Include="Assets\Script\MainSceneScript\MainSceneChactorManage.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraMovement.cs" />
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <None Include="Assets\AssetStore\simple modular human\readMe.txt" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />
      <None Include="Assets\AssetStore\StarterAssets\license.txt" />
      <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
      <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
+     <None Include="Assets\AssetStore\_Heathen Engineering\Documentation\UX\Flat Icons [Free]\Read Me.txt" />
      <None Include="Assets\AssetStore\POLYGON city pack\Read_me.txt" />
      <None Include="Assets\AssetStore\StarterAssets\Environment\Shaders\Built-in_RP\ArmatureShader.shader" />
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
@@ -713,6 +714,9 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/DDE_WorkSpace/Men-Meet/Men_Meet/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/DDE_WorkSpace/Men-Meet/Men_Meet/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
@@ -743,13 +747,13 @@
       <Project>{5c8ff61c-b8af-907b-6bef-e0337dce62db}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{76e6b818-ed96-1c4e-19e0-398d72baf7b8}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
       <Project>{c7da4712-e742-6565-227d-d9f29b86aaa2}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{76e6b818-ed96-1c4e-19e0-398d72baf7b8}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
       <Project>{6d7fe6bb-0451-9c47-aba0-352f0547c2cf}</Project>

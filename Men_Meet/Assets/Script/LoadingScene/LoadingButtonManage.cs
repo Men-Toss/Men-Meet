@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LoadingButtonManage : MonoBehaviour
 {
+    public GameObject loadingPanel;
+
     public void ClickStart()
     {
-        SceneManager.LoadScene(4);
+        loadingPanel.SetActive(false);
     }
 }
