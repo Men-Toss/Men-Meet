@@ -4,12 +4,14 @@ ScriptsOnlyBuild:
     - CameraMovement
     - CharChoosePrefab
     - CharactorManage
+    - ChattingMange
     - EnterButtonManager
     - LoadingButtonManage
     - LoadingTextScript
     - LobbyButton
     - LobbySceneManager
     - LoginButton
+    - MainCharLoad
     - Movement3D
     - PhotonManageScript
     - ScreenManage
@@ -25,11 +27,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonAnimatorViewEditor
-    - Photon.Pun.PhotonTransformViewEditor
-    - Photon.Pun.PhotonViewInspector
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -181,7 +178,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5556}
     - Class: 114
-      Script: {instanceID: 22300}
+      Script: {instanceID: 61548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -266,6 +263,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2950}
     - Class: 114
+      Script: {instanceID: 3056}
+    - Class: 114
       Script: {instanceID: 3198}
     - Class: 114
       Script: {instanceID: 3398}
@@ -299,6 +298,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5562}
     - Class: 114
       Script: {instanceID: 5968}
+    - Class: 114
+      Script: {instanceID: 1762214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -352,9 +353,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -375,6 +384,16 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2912}
     - Class: 114
+      Script: {instanceID: 2950}
+    - Class: 114
+      Script: {instanceID: 3056}
+    - Class: 114
+      Script: {instanceID: 3198}
+    - Class: 114
+      Script: {instanceID: 3398}
+    - Class: 114
+      Script: {instanceID: 3410}
+    - Class: 114
       Script: {instanceID: 3874}
     - Class: 114
       Script: {instanceID: 3988}
@@ -385,14 +404,20 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4808}
     - Class: 114
+      Script: {instanceID: 5364}
+    - Class: 114
       Script: {instanceID: 5452}
     - Class: 114
       Script: {instanceID: 5546}
+    - Class: 114
+      Script: {instanceID: 1762214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1023,7 +1048,7 @@ ScriptsOnlyBuild:
     className: ConnectAndJoinRandom
   - hash:
       serializedVersion: 2
-      Hash: 86bfbde51f82ad095c6160bc3dabed2a
+      Hash: 414c1d218c999545cb4aeb2a994aec31
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement3D
@@ -1077,7 +1102,7 @@ ScriptsOnlyBuild:
     className: CinemachineHardLookAt
   - hash:
       serializedVersion: 2
-      Hash: effbd8fb4c0cd1fa6adb8b6777bf95b8
+      Hash: adce2e93356becfc9adf039c56bd11d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainCharLoad
@@ -2341,6 +2366,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: bbca49f959816cab93d3d930c5fbbf54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChattingMange
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginScene.unity
