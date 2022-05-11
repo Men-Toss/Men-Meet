@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - LoadingTextScript
     - LobbyButton
     - LobbySceneManager
+    - LobbySoundScript
     - LoginButton
     - MainCharLoad
     - Movement3D
@@ -103,7 +104,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3934}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 5560}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -139,6 +140,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -168,17 +173,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4384}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 4808}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 4810}
     - Class: 114
-      Script: {instanceID: 5200}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 61548}
+      Script: {instanceID: 5560}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -273,33 +278,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 4136}
     - Class: 114
-      Script: {instanceID: 4142}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4270}
+      Script: {instanceID: 4272}
     - Class: 114
-      Script: {instanceID: 4384}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4542}
     - Class: 114
-      Script: {instanceID: 4548}
+      Script: {instanceID: 4550}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4786}
     - Class: 114
-      Script: {instanceID: 4808}
+      Script: {instanceID: 4810}
     - Class: 114
-      Script: {instanceID: 4846}
+      Script: {instanceID: 4848}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5562}
+      Script: {instanceID: 5368}
     - Class: 114
-      Script: {instanceID: 5968}
+      Script: {instanceID: 5566}
     - Class: 114
-      Script: {instanceID: 1762214}
+      Script: {instanceID: 5972}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -398,19 +403,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3988}
     - Class: 114
-      Script: {instanceID: 4384}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4746}
+      Script: {instanceID: 4748}
     - Class: 114
-      Script: {instanceID: 4808}
+      Script: {instanceID: 4810}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5452}
+      Script: {instanceID: 5368}
     - Class: 114
-      Script: {instanceID: 5546}
+      Script: {instanceID: 5456}
     - Class: 114
-      Script: {instanceID: 1762214}
+      Script: {instanceID: 5550}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1078,7 +1083,7 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
-      Hash: 94ecdd14736160b0025ebefac8fbed42
+      Hash: 6a98fe8e2f4e5429ce96a3beab30ddbf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LobbyButton
@@ -1502,6 +1507,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: ServerProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 5553e4cbaf1c3c877d45a49fe0526b83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbySoundScript
   - hash:
       serializedVersion: 2
       Hash: cd0ecdca0166232906c6f2df9dddc3d3
@@ -2002,6 +2013,12 @@ ScriptsOnlyBuild:
     className: RegionListView
   - hash:
       serializedVersion: 2
+      Hash: bbca49f959816cab93d3d930c5fbbf54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChattingMange
+  - hash:
+      serializedVersion: 2
       Hash: 2b53d93770b9036b2fd1c7854560bc69
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -2366,12 +2383,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
-  - hash:
-      serializedVersion: 2
-      Hash: bbca49f959816cab93d3d930c5fbbf54
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChattingMange
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginScene.unity
