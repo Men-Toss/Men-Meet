@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.TestTools;
@@ -17,16 +19,18 @@ public class MainCharLoad : MonoBehaviour
     //현재 선택인덱스  
     public int selectedChar = 0;
     public PhotonView PV;
-
     void Start()
     {
         charCode = PV.InstantiationData[0].ToString();
         skinCode = int.Parse(PV.InstantiationData[1].ToString());
         clothCode = int.Parse(PV.InstantiationData[2].ToString());
-        
-        if(PV.IsMine)
-        GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
-            gameObject.transform.GetChild(36).transform;
+
+        if (PV.IsMine)
+        {
+            GameObject.Find("Camera").GetComponent<CameraMovement>().PV = this.GetComponent<PhotonView>();
+            GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
+                gameObject.transform.GetChild(36).transform;
+        }
         
         PV.RPC("loadChar",RpcTarget.AllBuffered);
         
@@ -38,7 +42,6 @@ public class MainCharLoad : MonoBehaviour
         loadCharactor(charCode,skinCode,clothCode);
         
     }
-    
     
     //메타버스 월드 처음 입장 시 캐릭터 정보 
     public void loadCharactor(string charCode,int skin,int cloth)
@@ -156,5 +159,6 @@ public class MainCharLoad : MonoBehaviour
         gameObject.transform.GetChild(selectedChar).gameObject
             .GetComponent<SkinnedMeshRenderer>().material = charTexture[cloth * 3 + skin];
     }
-    
+
+
 }

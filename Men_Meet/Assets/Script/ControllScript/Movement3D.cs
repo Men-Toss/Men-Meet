@@ -72,10 +72,15 @@ public class Movement3D : MonoBehaviour
     //업데이트 함수 실행 후 호출
     void LateUpdate()
     {
-        //사용자가 ALt를 누르고 있다면
-        if (!toggleCameraRotation) {
-            Vector3 playerRotate = Vector3.Scale(_camera.transform.forward, new Vector3(1, 0, 1));
-            transform.rotation=Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(playerRotate),Time.deltaTime*smoothness );
+        if (PV.IsMine)
+        {
+            //사용자가 ALt를 누르고 있지 않다면
+            if (!toggleCameraRotation)
+            {
+                Vector3 playerRotate = Vector3.Scale(_camera.transform.forward, new Vector3(1, 0, 1));
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(playerRotate),
+                    Time.deltaTime * smoothness);
+            }
         }
     }
     [PunRPC]
@@ -91,8 +96,8 @@ public class Movement3D : MonoBehaviour
         Vector3 movedDirection = forward * Input.GetAxisRaw("Vertical") + right * Input.GetAxisRaw("Horizontal");
 
     //Debug.Log(IsCheckGrounded());
-        
-        //SpaceBar 누를 시
+
+    //SpaceBar 누를 시
         if (Input.GetKey(KeyCode.Space))
         {
             _animator.SetTrigger("Jumping");

@@ -1,7 +1,8 @@
     using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+    using Photon.Pun;
+    using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -29,7 +30,9 @@ public class CameraMovement : MonoBehaviour
     //최종거리
     public float finalDistance;
     //부드러운 정도
-    public float smoothness=10f;
+    public float smoothness = 10f;
+    //카메라 포톤 뷰
+    public PhotonView PV;
     void Start()
     {
         //카메라 방향은 초기화
@@ -45,29 +48,36 @@ public class CameraMovement : MonoBehaviour
     }
     void Update()
     {
-        //마우스 X / Y축 값 입력받음
-        rotX += -1 * (Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime);
-        rotY += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+        if (PV.IsMine)
+        {
+            //마우스 X / Y축 값 입력받음
+            rotX += -1 * (Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime);
+            rotY += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
 
-        rotX = Mathf.Clamp(rotX ,- clampAngle, clampAngle);
-        
-        //쿼터니언 설정
-        Quaternion rot=Quaternion.Euler(rotX,rotY,0);
-        transform.rotation = rot;
+            rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
+
+            //쿼터니언 설정
+            Quaternion rot = Quaternion.Euler(rotX, rotY, 0);
+            transform.rotation = rot;
+        }
     }
     //업데이트 끝난 다음에 실행됨
     private void LateUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, objectTofollow.position, followSpeed);
-        finalDir = transform.TransformPoint(dirNormalized * maxDistance);
-        
-        //물체가 있는지 확인을 위해 RaycastHit 활용
-        RaycastHit hit;
-        if (Physics.Linecast(transform.position, finalDir, out hit))
-            finalDistance = Mathf.Clamp(hit.distance, minDistance, maxDistance);
-        else
-            finalDistance = maxDistance;
+        if (PV.IsMine)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, objectTofollow.position, followSpeed);
+            finalDir = transform.TransformPoint(dirNormalized * maxDistance);
 
-        realCamera.localPosition = Vector3.Lerp(realCamera.localPosition,dirNormalized*finalDistance,Time.deltaTime*smoothness);
+            //물체가 있는지 확인을 위해 RaycastHit 활용
+            RaycastHit hit;
+            if (Physics.Linecast(transform.position, finalDir, out hit))
+                finalDistance = Mathf.Clamp(hit.distance, minDistance, maxDistance);
+            else
+                finalDistance = maxDistance;
+
+            realCamera.localPosition = Vector3.Lerp(realCamera.localPosition, dirNormalized * finalDistance,
+                Time.deltaTime * smoothness);
+        }
     }
 }

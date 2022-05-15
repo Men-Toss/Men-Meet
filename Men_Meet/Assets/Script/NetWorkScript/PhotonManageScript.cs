@@ -11,6 +11,9 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public Text Statetext;
     public Image ProgressBar;
     public LoadingTextScript loadingTextScript;
+    public Text[] ChatText = new Text[10];
+    public Text ChatInput;
+    
     //네트워크 서버 연결
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
     //Connect()콜백 함수
@@ -59,6 +62,10 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
        charInstan[2] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth.ToString();
        
        PhotonNetwork.Instantiate("Player",new Vector3(-323f,70f,45f),Quaternion.identity,0,charInstan);
+       
+       
+       ChatInput.text = "";
+       for (int i = 0; i < ChatText.Length; i++) ChatText[i].text = "";
     } 
     //참가 실패시 콜백함수
     public override void OnJoinRoomFailed(short returnCode, string message) => Statetext.text +="OnJoinRoomFailed\n";
@@ -70,6 +77,7 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public override void OnJoinRandomFailed(short returnCode, string message) => Statetext.text += "OnJoinRandomFailed\n";
     //방 떠나기
     public void LeaveRoom() => PhotonNetwork.LeaveRoom();
+
     void Start() {
     Connect();
     } 
