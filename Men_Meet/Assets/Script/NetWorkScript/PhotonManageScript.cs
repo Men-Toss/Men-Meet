@@ -61,7 +61,7 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
        charInstan[1] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userSkin.ToString();
        charInstan[2] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth.ToString();
        
-       PhotonNetwork.Instantiate("Player",new Vector3(-323f,70f,45f),Quaternion.identity,0,charInstan);
+       PhotonNetwork.Instantiate("Player",new Vector3(1f,0,0),Quaternion.identity,0,charInstan);
        
        
        ChatInput.text = "";

@@ -57,7 +57,9 @@
      <Compile Include="Assets\AssetStore\StarterAssets\Editor\StarterAssetsDeployMenu.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Editor\PackageChecker\PackageChecker.cs" />
+     <Compile Include="Assets\AssetStore\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
      <None Include="Assets\AssetStore\StarterAssets\Editor\PackageChecker\PackageImportList.txt" />
+     <None Include="Assets\AssetStore\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageImportList.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
