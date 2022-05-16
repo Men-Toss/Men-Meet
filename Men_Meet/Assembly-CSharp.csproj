@@ -60,7 +60,6 @@
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
-     <Compile Include="Assets\Script\NetWorkScript\NetWorkManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
@@ -89,7 +88,6 @@
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
-     <Compile Include="Assets\RPCtest\Test.cs" />
      <Compile Include="Assets\Script\LookCam.cs" />
      <Compile Include="Assets\Script\MainSceneScript\InstatiateCallback.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />

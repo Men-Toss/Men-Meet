@@ -40,8 +40,18 @@ public class LobbyButton : MonoBehaviour
     public int clothCode=0;
     //사운드 매니저
     public LobbySoundScript _lobbySoundScript;
-    void Start() => ClickMale();
-    
+
+    void Start()
+    {
+        ClickMale();
+        Invoke("LateStart",0.5f);
+    }
+
+    void LateStart()
+    {
+        nowCharCode = "M0";
+        _CharactorManage.setPrefabActive(nowCharCode);
+    }
     //남자 캐릭터 인덱스 메소드
     public void CharLoadMale(int index)
     {

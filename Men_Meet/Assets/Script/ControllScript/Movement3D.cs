@@ -97,13 +97,14 @@ public class Movement3D : MonoBehaviour
 
     //Debug.Log(IsCheckGrounded());
 
-    //SpaceBar 누를 시
-        if (Input.GetKey(KeyCode.Space))
+    //SpaceBar 누를 시 - 점프 구현 미실시 예정
+        /*
+         if (Input.GetKey(KeyCode.Space))
         {
             _animator.SetTrigger("Jumping");
             //movedDirection.y = jumpForce;
         }
-        
+        */
         //플레이어 중력 설정
        // movedDirection.y += gravity;
          

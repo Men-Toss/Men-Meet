@@ -9,7 +9,8 @@ using UnityEngine.TestTools;
 
 public class MainCharLoad : MonoBehaviour
 {
-    
+    //사용자 프리팹 닉네임
+    public string charNickName;
     //사용자 캐릭터,스킨,의상코드
     public string charCode;
     public int skinCode;
@@ -24,13 +25,14 @@ public class MainCharLoad : MonoBehaviour
         charCode = PV.InstantiationData[0].ToString();
         skinCode = int.Parse(PV.InstantiationData[1].ToString());
         clothCode = int.Parse(PV.InstantiationData[2].ToString());
-
+        charNickName = PV.InstantiationData[3].ToString();
         if (PV.IsMine)
         {
             GameObject.Find("Camera").GetComponent<CameraMovement>().PV = this.GetComponent<PhotonView>();
             GameObject.Find("Camera").GetComponent<CameraMovement>().objectTofollow =
                 gameObject.transform.GetChild(36).transform;
-        }
+            
+              }
         
         PV.RPC("loadChar",RpcTarget.AllBuffered);
         
@@ -39,6 +41,7 @@ public class MainCharLoad : MonoBehaviour
     [PunRPC]
     public void loadChar()
     {
+        gameObject.transform.GetChild(37).GetComponent<TextMesh>().text = charNickName;
         loadCharactor(charCode,skinCode,clothCode);
         
     }

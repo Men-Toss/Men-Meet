@@ -792,8 +792,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIDInputText: {fileID: 1790468162}
   UPWInputText: {fileID: 781407168}
-  Signup: www.naver.com
-  Introduce: www.google.com
+  Signup: http://mentoss123.cafe24.com/Signup/Menmeet_Signup.jsp
+  Introduce: http://mentoss123.cafe24.com/Menmeet_Main.jsp
   FailedPanel: {fileID: 2008112557}
   stateScript: {fileID: 489572189}
 --- !u!1 &489572188

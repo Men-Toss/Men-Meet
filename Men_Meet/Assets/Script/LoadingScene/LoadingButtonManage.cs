@@ -14,6 +14,7 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public GameObject ChatPanel;
     public Text msgText;
     public bool isChatpanel=false;
+    public Button chatIcon;
 
 
     //메타버스 월드 입장
@@ -51,11 +52,13 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
         if (isChatpanel)
         {
             ChatPanel.SetActive(false);
+            chatIcon.gameObject.SetActive(true);
             isChatpanel=false;
         }
         else
         {
             ChatPanel.SetActive(true);
+            chatIcon.gameObject.SetActive(false);
             isChatpanel=true;
         }
     }

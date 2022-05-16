@@ -3428,13 +3428,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.66
+  m_Height: 1.5
   m_Radius: 0.24
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.91, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &3348442931721946846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3537,6 +3537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2822d54ad21c3c478073a1adbb8694b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charNickName: 
   charCode: 
   skinCode: 0
   clothCode: 0
@@ -5643,7 +5644,7 @@ GameObject:
   - component: {fileID: 2412952655091186769}
   - component: {fileID: 813302067078270630}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PlayerNick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5657,8 +5658,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4059355140053519060}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.2, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalPosition: {x: 0, y: 2.018, z: 0}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children: []
   m_Father: {fileID: 3347966638500679800}
   m_RootOrder: 37
@@ -5712,7 +5713,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4059355140053519060}
-  m_Text: "\uC774\uC740\uC131"
+  m_Text: "\uB2C9\uB124\uC784"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

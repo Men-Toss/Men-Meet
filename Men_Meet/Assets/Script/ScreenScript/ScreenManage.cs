@@ -5,5 +5,5 @@ using UnityEngine;
 
 public class ScreenManage : MonoBehaviour
 {
- private void Awake() => Screen.SetResolution(1920 , 1080,true);
+ private void Awake() => Screen.SetResolution(960 , 540,false);
 }

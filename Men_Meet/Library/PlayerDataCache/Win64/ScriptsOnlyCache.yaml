@@ -49,8 +49,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -171,17 +173,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3010}
     - Class: 114
       Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4060}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4274}
     - Class: 114
-      Script: {instanceID: 4810}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4902}
+      Script: {instanceID: 4812}
+    - Class: 114
+      Script: {instanceID: 4904}
     - Class: 114
       Script: {instanceID: 5204}
     - Class: 114
@@ -272,9 +276,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 3056}
+      Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3196}
     - Class: 114
       Script: {instanceID: 3398}
     - Class: 114
@@ -282,25 +286,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4138}
     - Class: 114
-      Script: {instanceID: 4144}
+      Script: {instanceID: 4146}
     - Class: 114
-      Script: {instanceID: 4272}
+      Script: {instanceID: 4274}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4542}
+      Script: {instanceID: 4544}
     - Class: 114
-      Script: {instanceID: 4550}
+      Script: {instanceID: 4552}
     - Class: 114
-      Script: {instanceID: 4786}
+      Script: {instanceID: 4788}
     - Class: 114
-      Script: {instanceID: 4810}
+      Script: {instanceID: 4812}
     - Class: 114
-      Script: {instanceID: 4848}
+      Script: {instanceID: 4850}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 4940}
     - Class: 114
       Script: {instanceID: 5368}
     - Class: 114
@@ -308,9 +312,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5568}
     - Class: 114
-      Script: {instanceID: 5974}
+      Script: {instanceID: 5688}
     - Class: 114
-      Script: {instanceID: 2207962}
+      Script: {instanceID: 5976}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -387,32 +391,32 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3196}
     - Class: 114
       Script: {instanceID: 3874}
     - Class: 114
       Script: {instanceID: 3988}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4042}
     - Class: 114
-      Script: {instanceID: 4748}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4810}
+      Script: {instanceID: 4750}
+    - Class: 114
+      Script: {instanceID: 4812}
     - Class: 114
       Script: {instanceID: 5458}
     - Class: 114
       Script: {instanceID: 5552}
-    - Class: 114
-      Script: {instanceID: 60248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 137
-      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 208
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1045,7 +1049,7 @@ ScriptsOnlyBuild:
     className: Movement3D
   - hash:
       serializedVersion: 2
-      Hash: 58e68364412c67eae2bdb4954be2dcc2
+      Hash: cdc504759d64aae7eed4463cbaec87db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Readme
@@ -1093,7 +1097,7 @@ ScriptsOnlyBuild:
     className: CinemachineHardLookAt
   - hash:
       serializedVersion: 2
-      Hash: adce2e93356becfc9adf039c56bd11d7
+      Hash: 7787a354dcea2301f9eaded0804a1c20
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainCharLoad
@@ -1487,6 +1491,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: BoolInputField
+  - hash:
+      serializedVersion: 2
+      Hash: f525e64d87e76fa263bcd0b992b91bc5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatManage
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
@@ -2071,12 +2081,6 @@ ScriptsOnlyBuild:
     className: EventSystemSpawner
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Test
-  - hash:
-      serializedVersion: 2
       Hash: 426e5bd616852254b77531cd1a8e29b6
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.OnScreen
@@ -2239,6 +2243,12 @@ ScriptsOnlyBuild:
     className: ServerAddressProperty
   - hash:
       serializedVersion: 2
+      Hash: bf8b61c093584f57bd3189fc75c29157
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrefabChat
+  - hash:
+      serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -2369,18 +2379,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
-  - hash:
-      serializedVersion: 2
-      Hash: f525e64d87e76fa263bcd0b992b91bc5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChatManage
-  - hash:
-      serializedVersion: 2
-      Hash: bf8b61c093584f57bd3189fc75c29157
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PrefabChat
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginScene.unity

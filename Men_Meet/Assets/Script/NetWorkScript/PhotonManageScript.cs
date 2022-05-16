@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public LoadingTextScript loadingTextScript;
     public Text[] ChatText = new Text[10];
     public Text ChatInput;
+    public Button StartButton;
+    public GameObject ChatPanel;
+    public Text nowPlayerText;
     
     //네트워크 서버 연결
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
@@ -55,17 +59,20 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
        MainStatetext.text="준비완료~!";
        ProgressBar.fillAmount=1f;
 
-       string[] charInstan=new string[3];
+       string[] charInstan=new string[4];
        
        charInstan[0] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCharCode;
        charInstan[1] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userSkin.ToString();
        charInstan[2] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth.ToString();
-       
-       PhotonNetwork.Instantiate("Player",new Vector3(1f,0,0),Quaternion.identity,0,charInstan);
+       charInstan[3] = GameObject.Find("UserManager").GetComponent<UserStateScript>().UserNickName;
+       PhotonNetwork.Instantiate("Player",new Vector3(1f,-0.25f,0),Quaternion.identity,0,charInstan);
        
        
        ChatInput.text = "";
        for (int i = 0; i < ChatText.Length; i++) ChatText[i].text = "";
+       
+       StartButton.gameObject.SetActive(true);
+       //ChatPanel.SetActive(false);
     } 
     //참가 실패시 콜백함수
     public override void OnJoinRoomFailed(short returnCode, string message) => Statetext.text +="OnJoinRoomFailed\n";
@@ -79,8 +86,14 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public void LeaveRoom() => PhotonNetwork.LeaveRoom();
 
     void Start() {
-    Connect();
-    } 
+        StartButton.gameObject.SetActive(false);
+        Connect();
+    }
+
+    private void Update()
+    {
+        nowPlayerText.text = PhotonNetwork.CountOfPlayers.ToString()+" / 50";
+    }
 
     void Info()
     {
