@@ -60,7 +60,6 @@
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\AssetStore\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
-     <Compile Include="Assets\Script\NetWorkScript\NetWorkManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
@@ -75,6 +74,8 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Script\EnterSceneScript\EnterButtonManager.cs" />
      <Compile Include="Assets\Script\TestScreen.cs" />
+     <Compile Include="Assets\Script\ChattingScript\ChatManage.cs" />
+     <Compile Include="Assets\Script\LobbySceneScript\LobbySoundScript.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Script\UserScript\UserStateScript.cs" />
      <Compile Include="Assets\Script\ScreenScript\ScreenManage.cs" />
@@ -87,12 +88,13 @@
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
-     <Compile Include="Assets\RPCtest\Test.cs" />
+     <Compile Include="Assets\Script\LookCam.cs" />
      <Compile Include="Assets\Script\MainSceneScript\InstatiateCallback.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraMovement.cs" />
      <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
+     <Compile Include="Assets\Script\ChattingScript\PrefabChat.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />

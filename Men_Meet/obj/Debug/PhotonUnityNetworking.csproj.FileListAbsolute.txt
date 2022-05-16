@@ -280,3 +280,8 @@ C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.csproj.CoreCo
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.csproj.CopyComplete
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.dll
 C:\DDE_WorkSpace\Men-Meet\Men_Meet\obj\Debug\PhotonUnityNetworking.pdb
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\log4netPlastic.dll
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Plastic.Antlr3.Runtime.dll
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\Unity.Plastic.Newtonsoft.Json.dll
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\unityplastic.dll
+C:\DDE_WorkSpace\Men-Meet\Men_Meet\Temp\Bin\Debug\unityplastic.pdb

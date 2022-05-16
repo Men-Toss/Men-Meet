@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
-using Button = UnityEngine.UI.Button;
 
 public class LobbyButton : MonoBehaviour
 {
@@ -30,12 +28,30 @@ public class LobbyButton : MonoBehaviour
     public string nowCharCode;
     //캐릭터 매니저 임포트
     public CharactorManage _CharactorManage;
+    //사운드 버튼
+    public Button soundButton;
+    // 현재 사운드 인덱스 0:음소거 / 1,2 / 3:최대
+    public int soundIndex=3;
+    //사운드 버튼 이미지 배열
+    public Sprite[] soundSprite = new Sprite[4];
     //캐릭터 스킨 코드
     public int skinCode=0;
     //캐릭터 의상 코드
     public int clothCode=0;
-    void Start() => ClickMale();
-    
+    //사운드 매니저
+    public LobbySoundScript _lobbySoundScript;
+
+    void Start()
+    {
+        ClickMale();
+        Invoke("LateStart",0.5f);
+    }
+
+    void LateStart()
+    {
+        nowCharCode = "M0";
+        _CharactorManage.setPrefabActive(nowCharCode);
+    }
     //남자 캐릭터 인덱스 메소드
     public void CharLoadMale(int index)
     {
@@ -141,5 +157,16 @@ public class LobbyButton : MonoBehaviour
         GameObject.Find("UserManager").GetComponent<UserStateScript>().userSkin = this.skinCode;
         GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth = this.clothCode;
         SceneManager.LoadScene(2); 
+    }
+
+    
+    //사운드 이미지 변경
+    public void SoundClick()
+    {
+        soundIndex++;
+        if (soundIndex == 4) soundIndex = 0;
+        //LobbySoundScript.setSound(soundIndex);
+        soundButton.GetComponent<Image>().sprite = soundSprite[soundIndex];
+        _lobbySoundScript.setSound(soundIndex);
     }
 }
