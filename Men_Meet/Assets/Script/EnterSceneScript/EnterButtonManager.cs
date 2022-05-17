@@ -5,17 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class EnterButtonManager : MonoBehaviour
 {
-    //정문 클릭시
-    public void Start_Front()
+    //유저 스타팅 포인트 (0:프로그램 1:멘토링 2:학교소개 3:만남의 광장 )
+    public void startWith(int num)
     {
-        GameObject.Find("UserManager").GetComponent<UserStateScript>().userStartPoint=false;
-        //LoadingScene
-        SceneManager.LoadScene(3);
-    }
-    //후문 클릭시
-    public void Start_Back()
-    {
-        GameObject.Find("UserManager").GetComponent<UserStateScript>().userStartPoint=true;
+        GameObject.Find("UserManager").GetComponent<UserStateScript>().userStartPoint=num;
         //LoadingScene
         SceneManager.LoadScene(3);
     }
