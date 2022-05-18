@@ -9,8 +9,8 @@ public class UserStateScript : MonoBehaviour
     [SerializeField] private string userID;
     //유저 비밀번호
     [SerializeField] private string userNickName;
-    //유저 스타팅 포인트 (0:정문 1:후문)
-    public bool userStartPoint = false;
+    //유저 스타팅 포인트 (0:프로그램 1:멘토링 2:학교소개 3:만남의 광장 )
+    public int userStartPoint = 3;
     //유저 아이디.비밀번호 프로퍼티(Property)
     public string UserId
     {

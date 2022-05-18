@@ -92,7 +92,7 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        nowPlayerText.text = PhotonNetwork.CountOfPlayers.ToString()+" / 50";
+//        nowPlayerText.text = PhotonNetwork.CountOfPlayersInRooms.ToString()+" / 20";
     }
 
     void Info()

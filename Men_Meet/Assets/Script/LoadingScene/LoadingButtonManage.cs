@@ -19,8 +19,12 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
 
     //메타버스 월드 입장
     public void ClickStart()
-    {
+    {   
         loadingPanel.SetActive(false);
+        
+        ChatPanel.SetActive(false);
+        chatIcon.gameObject.SetActive(true);
+        isChatpanel=false;
     }
     //종료버튼 클릭 시
     public void ClickExit()
