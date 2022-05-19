@@ -12,4 +12,9 @@ public class EnterButtonManager : MonoBehaviour
         //LoadingScene
         SceneManager.LoadScene(3);
     }
+
+    public void ExitButton()
+    {
+        Application.Quit();
+    }
 }

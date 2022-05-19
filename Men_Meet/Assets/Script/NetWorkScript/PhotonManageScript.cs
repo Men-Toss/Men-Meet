@@ -15,8 +15,7 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public Text[] ChatText = new Text[10];
     public Text ChatInput;
     public Button StartButton;
-    public GameObject ChatPanel;
-    public Text nowPlayerText;
+    
     
     //네트워크 서버 연결
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
@@ -65,9 +64,18 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
        charInstan[1] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userSkin.ToString();
        charInstan[2] = GameObject.Find("UserManager").GetComponent<UserStateScript>().userCloth.ToString();
        charInstan[3] = GameObject.Find("UserManager").GetComponent<UserStateScript>().UserNickName;
-       PhotonNetwork.Instantiate("Player",new Vector3(1f,-0.25f,0),Quaternion.identity,0,charInstan);
+
+       int StartCode = GameObject.Find("UserManager").GetComponent<UserStateScript>().userStartPoint;
        
-       
+       if(StartCode==0)
+           PhotonNetwork.Instantiate("Player",new Vector3(16f,-0.25f,15),Quaternion.identity,0,charInstan);
+       else if(StartCode==1)
+           PhotonNetwork.Instantiate("Player",new Vector3(34f,-0.25f,1.5f),Quaternion.identity,0,charInstan);
+       else if(StartCode==2)
+           PhotonNetwork.Instantiate("Player",new Vector3(16.4f,-0.25f,-12),Quaternion.identity,0,charInstan);
+       else 
+           PhotonNetwork.Instantiate("Player",new Vector3(1f,-0.25f,0),Quaternion.identity,0,charInstan);
+
        ChatInput.text = "";
        for (int i = 0; i < ChatText.Length; i++) ChatText[i].text = "";
        
