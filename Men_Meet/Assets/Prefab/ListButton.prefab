@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6666667, g: 1, b: 0.95686275, a: 1}
+  m_Color: {r: 0.01009252, g: 0.764151, b: 0.657015, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainText: {fileID: 7259625646668694898}
   SubText: {fileID: 5776648140968807735}
-  Code: 
+  Code: 1_28
 --- !u!1 &6333294571837827443
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is SubText
+  m_Text: "\uC608\uCCB4\uB2A5\uACC4\uC5F4"
 --- !u!1 &9201078290736014985
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,4 +295,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is Main Text
+  m_Text: "\uC6F9\uD230\uC2A4\uD1A0\uB9AC\uD154\uB9C1\uD559\uACFC"

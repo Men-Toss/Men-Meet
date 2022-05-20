@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
+using Image = UnityEngine.UIElements.Image;
+
 public class LoadingButtonManage : MonoBehaviourPunCallbacks
 {
     public GameObject loadingPanel;
@@ -15,7 +17,8 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public Text msgText;
     public bool isChatpanel=false;
     public Button chatIcon;
-
+    //학교 소개 버튼 배열
+    public Button[] IntroDuce = new Button[4];
 
     //메타버스 월드 입장
     public void ClickStart()
@@ -79,7 +82,19 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.Y))
             ClickChat();
+    }
+    
+    
+    //학교 소개 패널 클릭 시 작동
+    public void ClickIntroduceButton(int index)
+    {
+        ColorBlock sb = new ColorBlock();
+        sb.normalColor=Color.white;
+
+        for (int i = 0; i < 4; i++)
+            IntroDuce[i].colors = sb; 
+        //입력요망
     }
 }
