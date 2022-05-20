@@ -7966,7 +7966,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 905364727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1714225335}
+        m_TargetAssemblyTypeName: ListManage, Assembly-CSharp
+        m_MethodName: loadListData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &905364727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14199,7 +14211,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1644410769}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1714225335}
+        m_TargetAssemblyTypeName: ListManage, Assembly-CSharp
+        m_MethodName: loadListData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1644410769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14781,6 +14805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1714225334}
+  - component: {fileID: 1714225335}
   m_Layer: 0
   m_Name: ListManager
   m_TagString: Untagged
@@ -14802,6 +14827,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1714225335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714225333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d3fe6e9eca9e4a80079c2f33f2a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ScrollRect: {fileID: 708678381}
+  Space: 50
+  IPD: {fileID: 3778703426877287007, guid: 4f9ab0113c324c1419b9b88c8091ceea, type: 3}
+  ConfirmedUIobjects: []
+  SchoolMainText: []
+  SchoolSubText: []
+  DepartmentMainText: []
+  DepartmentSubText: []
+  StructureMainText: []
+  StructureSubText: []
+  CirclesMainText: []
+  CirclesSubText: []
 --- !u!1001 &1721570357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15523,7 +15572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1797061066
 Transform:
   m_ObjectHideFlags: 0
@@ -16085,7 +16134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -95.34678}
+  m_AnchoredPosition: {x: 0, y: -95.95374}
   m_SizeDelta: {x: 392, y: 970.6935}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1852853774
@@ -16655,7 +16704,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1897666761}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1714225335}
+        m_TargetAssemblyTypeName: ListManage, Assembly-CSharp
+        m_MethodName: loadListData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1897666761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16776,8 +16837,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1595573621}
   m_HandleRect: {fileID: 1595573620}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.80354923
+  m_Value: 1.0031828
+  m_Size: 0.76163346
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17158,7 +17219,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1958262527}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1714225335}
+        m_TargetAssemblyTypeName: ListManage, Assembly-CSharp
+        m_MethodName: loadListData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1958262527
 MonoBehaviour:
   m_ObjectHideFlags: 0

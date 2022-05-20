@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6315631152396298539}
   - component: {fileID: 1323042513398233259}
   - component: {fileID: 252478323450248024}
+  - component: {fileID: 2541861490595981392}
   m_Layer: 5
   m_Name: ListButton
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0, b: 0.71721613, a: 1}
+  m_Color: {r: 0.6666667, g: 1, b: 0.95686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -122,6 +123,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2541861490595981392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778703426877287007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d0ff1b4d0e0154b9eaf8d651df248c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainText: {fileID: 7259625646668694898}
+  SubText: {fileID: 5776648140968807735}
+  Code: 
 --- !u!1 &6333294571837827443
 GameObject:
   m_ObjectHideFlags: 0

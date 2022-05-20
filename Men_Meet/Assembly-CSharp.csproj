@@ -89,6 +89,7 @@
      <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\Script\UserScript\CharactorManage.cs" />
+     <Compile Include="Assets\Script\ListScript\IntroducePrefabData.cs" />
      <Compile Include="Assets\Script\LookCam.cs" />
      <Compile Include="Assets\Script\MainSceneScript\InstatiateCallback.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
@@ -97,7 +98,6 @@
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
      <Compile Include="Assets\Script\ChattingScript\PrefabChat.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <Compile Include="Assets\Script\ListScript\IntroducePrefabData.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\Shader\3DText.shader" />

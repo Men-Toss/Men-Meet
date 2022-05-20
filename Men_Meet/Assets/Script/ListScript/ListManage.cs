@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class ListManage : MonoBehaviour
 {
-    public IntroducePrefabData IPD;
+    //리스트 스크롤 , 프리팹 사잉 스페이스
+    public ScrollRect _ScrollRect;
+    public float Space = 50f;
+    //학교소개 리스트 프리팹
+    public GameObject IPD;
+    //프리팹리스트
     public List<RectTransform> ConfirmedUIobjects=new List<RectTransform>();
     //학과소개 메인,서브 텍스트
     public List<string> SchoolMainText;
@@ -20,6 +25,12 @@ public class ListManage : MonoBehaviour
     public List<string> CirclesMainText;
     public List<string> CirclesSubText;
 
+    
+    void Start()
+    {
+        addSchoolData();
+    }
+    //학교 리스트 데이터 추가
     public void addSchoolData()
     {
         //공학계열
@@ -68,8 +79,166 @@ public class ListManage : MonoBehaviour
         SchoolMainText.Add("식품영양학과");
         SchoolSubText.Add("자연계열");
         //예체능 계열
+        SchoolMainText.Add("영화방송공연예술학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("패션산업학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("생활가구디자인학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("실내디자인학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("커뮤니케이션디자인학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("레저스포츠학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("VMD&전시디자인학과");
+        SchoolSubText.Add("예체능계열");
+        SchoolMainText.Add("웹툰스토리텔링학과");
+        SchoolSubText.Add("예체능계열");
         
         
         
+        //부처 소개
+        DepartmentMainText.Add("대학평의원회");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("기획조정처");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("교무처");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("학생지원처");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("산학협력처");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("입학홍보처");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("사무처");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("건설본부");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("부속기관");
+        DepartmentSubText.Add("대학조직");
+        DepartmentMainText.Add("부설기관");
+        DepartmentSubText.Add("대학조직");
+
+        
+        //건물소개
+        StructureMainText.Add("흥학관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("호천관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("세종관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("서일관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("지덕관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("누리관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("도서관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("배양관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("동아리관");
+        StructureSubText.Add("CAMPUS TOUR");
+        StructureMainText.Add("정문/어린이집");
+        StructureSubText.Add("CAMPUS TOUR");
+        
+        //동아리소개
+        CirclesMainText.Add("행랑 ESC");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("SENSATION");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("설계반");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("ART 마당");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("형상 사진회");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("VIC");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("WINGS");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("도시락");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("막내동이");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("컴퓨닉스");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("SISB");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("ThreeQ");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("니랑 극 예술 연구회");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("RCY");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("SAM");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("유스호스텔");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("MAC");
+        CirclesSubText.Add("동아리");
+        CirclesMainText.Add("C.C.C");
+        CirclesSubText.Add("동아리");
+    }
+    //리스트 갱신하기
+    public void loadListData(int cmd)
+    {
+        ConfirmedUIobjects.Clear();
+        if (cmd == 1)
+        {
+            for (int i = 0; i < SchoolMainText.Count; i++)
+            {
+                IPD.GetComponent<IntroducePrefabData>().MainText.text = SchoolMainText[i];
+                IPD.GetComponent<IntroducePrefabData>().SubText.text = SchoolSubText[i];
+                IPD.GetComponent<IntroducePrefabData>().Code = "1_" + i.ToString();
+
+                var newUI = Instantiate(IPD, _ScrollRect.content).GetComponent<RectTransform>();
+                ConfirmedUIobjects.Add(newUI);
+            }
+        }
+        else if (cmd == 2)
+        {
+            for (int i = 0; i < DepartmentMainText.Count; i++)
+            {
+                IPD.GetComponent<IntroducePrefabData>().MainText.text = DepartmentMainText[i];
+                IPD.GetComponent<IntroducePrefabData>().SubText.text = DepartmentSubText[i];
+                IPD.GetComponent<IntroducePrefabData>().Code = "2_" + i.ToString();
+
+                var newUI = Instantiate(IPD, _ScrollRect.content).GetComponent<RectTransform>();
+                ConfirmedUIobjects.Add(newUI);
+            }
+        }
+        else if (cmd == 3)
+        {
+            for (int i = 0; i < StructureMainText.Count; i++)
+            {
+                IPD.GetComponent<IntroducePrefabData>().MainText.text = StructureMainText[i];
+                IPD.GetComponent<IntroducePrefabData>().SubText.text = StructureSubText[i];
+                IPD.GetComponent<IntroducePrefabData>().Code = "3_" + i.ToString();
+
+                var newUI = Instantiate(IPD, _ScrollRect.content).GetComponent<RectTransform>();
+                ConfirmedUIobjects.Add(newUI);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < CirclesMainText.Count; i++)
+            {
+                IPD.GetComponent<IntroducePrefabData>().MainText.text = CirclesMainText[i];
+                IPD.GetComponent<IntroducePrefabData>().SubText.text = CirclesSubText[i];
+                IPD.GetComponent<IntroducePrefabData>().Code = "4_" + i.ToString();
+
+                var newUI = Instantiate(IPD, _ScrollRect.content).GetComponent<RectTransform>();
+                ConfirmedUIobjects.Add(newUI);
+            }
+        }
+        
+        float y=0f;
+        for(int i=0;i<ConfirmedUIobjects.Count;i++){
+            ConfirmedUIobjects[i].anchoredPosition=new Vector2(0f,-y);
+            y+=ConfirmedUIobjects[i].sizeDelta.y+Space;
+        }
+        _ScrollRect.content.sizeDelta=new Vector2(_ScrollRect.content.sizeDelta.x,y);
     }
 }
