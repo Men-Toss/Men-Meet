@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
-using Image = UnityEngine.UIElements.Image;
 
 public class LoadingButtonManage : MonoBehaviourPunCallbacks
 {
@@ -17,6 +16,8 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public Text msgText;
     public bool isChatpanel=false;
     public Button chatIcon;
+    //학교 소개 패널
+    public GameObject IntroducePanel;
     //학교 소개 버튼 배열
     public Button[] IntroDuce = new Button[4];
 
@@ -90,11 +91,11 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     //학교 소개 패널 클릭 시 작동
     public void ClickIntroduceButton(int index)
     {
-        ColorBlock sb = new ColorBlock();
-        sb.normalColor=Color.white;
-
         for (int i = 0; i < 4; i++)
-            IntroDuce[i].colors = sb; 
-        //입력요망
+            IntroDuce[i].GetComponent<Image>().color=Color.white;
+
+        IntroDuce[index].GetComponent<Image>().color = Color.cyan;
     }
+    
+    //
 }
