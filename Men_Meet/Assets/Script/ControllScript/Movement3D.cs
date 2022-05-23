@@ -56,7 +56,7 @@ public class Movement3D : MonoBehaviour
     
     void Update()
     {
-        if (PV.IsMine)
+        if (PV.IsMine && GameObject.Find("Camera").GetComponent<CameraMovement>().isCameraYes)
         {
             //왼쪽 ALT 누를 시
             if (Input.GetKey(KeyCode.LeftAlt)) toggleCameraRotation = true;
@@ -72,7 +72,7 @@ public class Movement3D : MonoBehaviour
     //업데이트 함수 실행 후 호출
     void LateUpdate()
     {
-        if (PV.IsMine)
+        if (PV.IsMine && GameObject.Find("Camera").GetComponent<CameraMovement>().isCameraYes)
         {
             //사용자가 ALt를 누르고 있지 않다면
             if (!toggleCameraRotation)
@@ -106,7 +106,7 @@ public class Movement3D : MonoBehaviour
         }
         */
         //플레이어 중력 설정
-       // movedDirection.y += gravity;
+        //movedDirection.y += gravity;
          
         _controller.Move(movedDirection.normalized * finalSpeed * Time.deltaTime);
        

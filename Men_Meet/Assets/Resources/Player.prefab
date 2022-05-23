@@ -3339,6 +3339,7 @@ GameObject:
   - component: {fileID: 6510899403452236240}
   - component: {fileID: 4292501691604851707}
   - component: {fileID: -8954714571939481791}
+  - component: {fileID: 8799511685998058368}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3516,7 +3517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedChar: 0
   PV: {fileID: 3348442931721946846}
-  gravity: -9.8
+  gravity: 0
   speed: 2
   runSpeed: 4
   finalSpeed: 0
@@ -3577,6 +3578,18 @@ MonoBehaviour:
   PV: {fileID: 3348442931721946846}
   _ChatManage: {fileID: 0}
   InputChatText: {fileID: 0}
+--- !u!114 &8799511685998058368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3350061445571406980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0996ad511b98e874ab3ae279ddc39a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3350084699596265708
 GameObject:
   m_ObjectHideFlags: 0

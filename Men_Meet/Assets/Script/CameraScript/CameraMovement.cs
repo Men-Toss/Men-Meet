@@ -33,6 +33,8 @@ public class CameraMovement : MonoBehaviour
     public float smoothness = 10f;
     //카메라 포톤 뷰
     public PhotonView PV;
+    //카메라 무빙 일시정지
+    public bool isCameraYes=true;
     void Start()
     {
         //카메라 방향은 초기화
@@ -48,7 +50,7 @@ public class CameraMovement : MonoBehaviour
     }
     void Update()
     {
-        if (PV.IsMine)
+        if (PV.IsMine && isCameraYes)
         {
             //마우스 X / Y축 값 입력받음
             rotX += -1 * (Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime);
@@ -64,7 +66,7 @@ public class CameraMovement : MonoBehaviour
     //업데이트 끝난 다음에 실행됨
     private void LateUpdate()
     {
-        if (PV.IsMine)
+        if (PV.IsMine && isCameraYes)
         {
             transform.position = Vector3.MoveTowards(transform.position, objectTofollow.position, followSpeed);
             finalDir = transform.TransformPoint(dirNormalized * maxDistance);
