@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,4 +9,5 @@ public class IntroducePrefabData : MonoBehaviour
     public Text MainText;
     public Text SubText;
     public string Code;
+    public void setColor(Color c)=>gameObject.GetComponent<Image>().color = c;
 }

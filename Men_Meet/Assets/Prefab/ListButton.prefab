@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.01009252, g: 0.764151, b: 0.657015, a: 1}
+  m_Color: {r: 0, g: 0.99029756, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -138,6 +138,7 @@ MonoBehaviour:
   MainText: {fileID: 7259625646668694898}
   SubText: {fileID: 5776648140968807735}
   Code: 1_28
+  PrefabColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &6333294571837827443
 GameObject:
   m_ObjectHideFlags: 0
