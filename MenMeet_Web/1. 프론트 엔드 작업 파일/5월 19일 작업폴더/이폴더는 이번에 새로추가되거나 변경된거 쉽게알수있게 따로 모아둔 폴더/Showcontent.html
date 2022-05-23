@@ -20,28 +20,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Butcherman&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chilanka&amp;display=swap">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet"
         href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
 </head>
 
 <body>
-    <form id=formContent; name=formContent; style="margin-top: 12px;background: url(&quot;/assets/img/w.gif&quot;) bottom / contain space, rgba(0,0,0,0);">
-        <input class="form-control" id="txtInputgTitle" name="txtInputgTitle" type="text" style="width: 310px;margin-top: 20px;margin-left: 55px;"
-            value="자바스크립트 알려드려요."> <textarea class="form-control"
-            style="width: 310px;height: 200px;margin-left: 55px;margin-top: 10px;" id="txtareagContent" name="txtareagContent">응 니가해~</textarea><input class="form-control" type="text"
-            style="width: 310px;margin-top: 20px;margin-left: 55px;border-width: 2px;border-color: rgb(111,169,237);"
-            value="Mento"><input class="form-control" type="text" id="txtInputCategory" name="txtInputCategory"
-            style="width: 310px;margin-top: 20px;margin-left: 55px;border-width: 2px;border-color: rgb(111,169,237);margin-bottom: 15px;"
-            value="전공"><input class="form-control" type="date" id="gDate" name="gDate"
-            style="width: 310px;margin-left: 55px;margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);"
-            value="2022-05-21">
-        <div><input type="time" id="gTime" name="gTime"
-                style="width: 310px;margin-left: 55px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);"
-                value="오후 04:49"><br></div>
-    </form>
+    <form id="formContent" name="formContent" style="margin-top: 12px; background: url(&quot;/assets/img/back8.gif&quot;) bottom / auto , rgba(0,0,0,0);">
+        <span style="margin-left: 34%; margin-bottom: 15px; font-weight:bold;font-size: 18px;"><i
+            class="far fa-edit"></i>  멘토링 게시글 </span><br><br>
+        <span style="margin-left: 55px; font-weight : bold; font-size: 14px;">구분 : </span>
+        <label id="labelgPost" name="labelgPost" style="font-size: 14px;"> Menti </label>
+        <span style="margin-left: 55px; font-weight : bold; font-size: 14px;">카테고리 : </span>
+        <label id="labelSelectedCategory" name="labelSelectedCategory" style="font-size: 14px;"> 전공 </label>
+        <input class="form-control" placeholder="제목을 입력해주세요." value="자바스크립트 알려드려요" type="text" style="width: 385px; margin-top:5px; margin-left: 55px;"><textarea class="form-control" id="txtInputwTitle" name="txtInputwTitle"
+            id="txtareawContent" name="txtareawContent" style="width: 385px;height: 240px; margin-bottom: 10px; margin-left: 55px;margin-top: 10px;">응 니가해~</textarea>
+        
+        <div class="row">
+            <div class="col" style="width:60%">
+        <input class="form-control" type="date" id="gDate" name="gDate" value="2022-05-23"
+            style="width: 240px;margin-left: 55px;  margin-bottom: 10px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);">
+            <input type="time" id="gTime" name="gTime"
+            style="width: 240px;margin-left: 55px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);">
+        </div><div class="col"></div>
+        <button id="btnRequest" name="btnRequest" class="btn btn-primary" type="button" style="width: 100px; margin-right:78px; margin-top: 20px;">멘티 신청</button>
+        </div></div></form>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="/assets/js/script.min.js"></script>
 </body>
 
 </html>
