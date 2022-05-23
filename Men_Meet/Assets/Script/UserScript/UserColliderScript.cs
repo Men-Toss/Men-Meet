@@ -30,7 +30,6 @@ public class UserColliderScript : MonoBehaviour
             LBM.Intro_Pro_btnSetText("기타 프로그램");
         else if (triggerTag.Equals("Program_5"))
             LBM.Intro_Pro_btnSetText("자주 묻는 질문");
-        
     }
 
     private void OnTriggerExit(Collider other)

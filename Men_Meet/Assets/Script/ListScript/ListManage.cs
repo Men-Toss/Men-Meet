@@ -225,7 +225,25 @@ public class ListManage : MonoBehaviour
     {
         XmlDocument AllVaccineXml=new XmlDocument();
         AllVaccineXml.LoadXml(API_Result);
-        XmlNodeList all_nodes = AllVaccineXml.SelectNodes("response/body/items/item");
+        XmlNodeList all_nodes = AllVaccineXml.SelectNodes("Program_List/Element");
+
+        foreach (XmlNode node in all_nodes)
+        {
+            int code;
+            string Program_Name;
+            string Program_Introduce;
+            string Program_Start;
+            
+        }
+    }
+    //리스트 추가 함수
+    public void addNode(int cmd,string text1,string text2,string text3,string text4,string text5) {
+        switch (cmd)
+        {
+           case 1:
+               Program1
+               break;
+        }
     }
     //학교 소개 리스트 갱신하기
     public void loadIntroListData(int cmd)
