@@ -29,29 +29,35 @@
 </head>
 
 <body>
-    <form id="formWrite" name="formWrite" style="margin-top: 12px;background: url(&quot;/assets/img/w.gif&quot;) bottom / contain space, rgba(0,0,0,0);">
-        <input class="form-control" placeholder="제목을 입력해주세요." type="text" style="width: 310px;margin-top: 20px;margin-left: 55px;"><textarea class="form-control" id="txtInputwTitle" name="txtInputwTitle"
-            id="txtareawContent" name="txtareawContent" placeholder="내용을 입력해주세요." style="width: 310px;height: 200px; margin-bottom: 15px; margin-left: 55px;margin-top: 10px;"></textarea>
-        <span style="margin-left: 55px; margin-bottom: 15px; font-size: 13.5px;">게시글이 등록될 곳을 선택하세요.</span><br></span>
-        <select name="comboLocation" style="margin-top: 15px; margin-bottom:10px; background: rgb(255,255,255);color: rgb(0,0,0);border: 2px solid rgb(111,169,237);margin-left: 55px;width: 310px;">
-            <option value="1">Mento</option>
-            <option value="2">Menti</option>
-        </select><br>
-        <span style="margin-left: 55px; font-size: 13.5px;">카테고리를 선택하세요.</span><br></span>
-        <select name="comboCategory" style="margin-top: 10px; margin-bottom:15px;background: rgb(255,255,255);color: rgb(0,0,0);border: 2px solid rgb(111,169,237);margin-left: 55px;width: 310px;">
+    <form id="formWrite" name="formWrite" style="margin-top: 12px; background: url(&quot;/assets/img/back8.gif&quot;) bottom / auto , rgba(0,0,0,0);">
+        <span style="margin-left: 32%; margin-bottom: 15px; font-weight:bold;font-size: 18px;"><i
+            class="far fa-edit"></i>  멘토링 게시글쓰기</span><br>
+        <select name="comboLocation" style="margin-top: 15px; background: rgb(255,255,255);color: rgb(0,0,0);border: 2px solid rgb(111,169,237);margin-left: 55px;width: 220px;">
+            <option value="none" hidden>희망사항을 선택해주세요.</option>
+            <option value="1">멘토가 되고싶어요.</option>
+            <option value="2">멘티가 되고싶어요.</option>
+        </select>
+        <select id="comboPopupCategory"name="comboPopupCategory" style="margin-top: 10px; margin-bottom:15px;background: rgb(255,255,255);color: rgb(0,0,0);border: 2px solid rgb(111,169,237);margin-left: 10px;width: 150px;">
+            <option value="none" hidden>카테고리</option>
             <option value="1">전공</option>
             <option value="2">진로</option>
             <option value="3">연애</option>
             <option value="4">학교생활</option>
             <option value="5">기타</option>
         </select><br>
-        <span style="margin-left: 55px; font-size: 13.5px;">예약일을 선택하세요.<br></span><input class="form-control"
+        <input class="form-control" placeholder="제목을 입력해주세요." type="text" style="width: 385px; margin-left: 55px;"><textarea class="form-control" id="txtInputwTitle" name="txtInputwTitle"
+            id="txtareawContent" name="txtareawContent" placeholder="내용을 입력해주세요." style="width: 385px;height: 240px; margin-bottom: 10px; margin-left: 55px;margin-top: 10px;"></textarea>
+        
+        <div class="row">
+            <div class="col" style="width:60%">
+        <span style="margin-left: 55px; font-size: 13.5px;">예약날짜와 시간을 선택하세요.<br></span><input class="form-control"
             type="date" id="sDate" name="sDate"
-            style="width: 310px;margin-left: 55px;  margin-bottom: 10px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);">
-            <span style="margin-left: 55px;font-size: 13.5px;">시간을 선택하세요.<br></span><input type="time" id="sTime" name="sTime"
-            style="width: 310px;margin-left: 55px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);"><br>
-            <button id="btnWriteRgt" name="btWriteRgt" class="btn btn-primary" type="button" style="width: 74px;margin-left: 173px;margin-top: 20px;">등록</button>
-    </form>
+            style="width: 240px;margin-left: 55px;  margin-bottom: 10px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);">
+            <input type="time" id="sTime" name="sTime"
+            style="width: 240px;margin-left: 55px; margin-top: 15px;border-width: 2px;border-color: rgb(111,169,237);">
+        </div><div class="col"></div>
+        <button id="btnRegister" name="btnRegister" class="btn btn-primary" type="button" style="width: 100px; margin-right:78px; margin-top: 20px;">등록</button>
+        </div></div></form>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>

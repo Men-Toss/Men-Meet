@@ -84,7 +84,9 @@
                                     style="margin-top: 6px;margin-right: 18px;margin-left: 10px;"> <i
                                         class="fa fa-search"></i></span></div>
                         </div>
-                    </form><button id="btnWrite" class="btn btn-primary float-end" type="button" onClick="mentoPopup()"
+                    </form>
+
+                    <button id="btnWrite" class="btn btn-primary float-end" type="button" onClick="mentoPopup()"
                         style="font-size: 12px;margin-top: 3.8px;">글쓰기</button>
                     <div>
                         <ul class="nav nav-tabs" role="tablist">
@@ -96,16 +98,14 @@
                                     id="linkMenti" href="#tab-2"
                                     style="font-family: Amiko, sans-serif;font-size: 15px;font-weight: bold;">Menti</a>
                             </li>
-                            <li class="dropdown" style="width: 130px;margin-top: 5.8px;text-align: center;"><a
-                                    class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"
-                                    id="linkCategory" href="#"
-                                    style="font-family: Amiko, sans-serif;color: #a9a9a9;font-size: 14px;"><strong>&nbsp;</strong><i
-                                        class="far fa-hand-point-right"></i><strong>&nbsp; Category</strong></a>
-                                <div class="dropdown-menu" style="font-size: 13px;font-weight: bold;"><a
-                                        class="dropdown-item" href="#">전공</a><a class="dropdown-item" href="#">진로</a><a
-                                        class="dropdown-item" href="#">연애</a><a class="dropdown-item"
-                                        href="#">학교생활</a><a class="dropdown-item" href="#">기타</a></div>
-                            </li>
+                            <select id="comboMentoringCategory" name="comboMentoringCategory" style="margin-top:5px; height:30px; background: rgb(255,255,255);color: rgb(0,0,0);border: 2px solid rgb(111,169,237);margin-left: 10px;width: 150px;">
+                                <option value="none" hidden>카테고리</option>
+                                <option value="1">전공</option>
+                                <option value="2">진로</option>
+                                <option value="3">연애</option>
+                                <option value="4">학교생활</option>
+                                <option value="5">기타</option>
+                            </select>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane active" role="tabpanel" id="tab-1">
@@ -192,10 +192,10 @@
     <script src="/assets/js/script.min.js"></script>
     <script language="JavaScript">
         function mentoPopup(){
-            window.open("MentoPopup.html", "멘토 게시글 작성", "width=420, height=560, left=450, top=100"); 
+            window.open("MentoPopup.html", "멘토 게시글 작성", "width=500, height=560, left=450, top=100"); 
         }
         function contentPopup(){
-            window.open("Showcontent.html", "게시글 팝업창", "width=420, height=520, left=450, top=100");
+            window.open("ShowContent.html", "게시글 팝업창", "width=500, height=540, left=450, top=100");
         }
     </script>
 </body>
