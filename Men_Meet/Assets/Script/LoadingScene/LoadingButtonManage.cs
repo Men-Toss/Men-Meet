@@ -125,6 +125,10 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
             Programbtn[i].GetComponent<Image>().color=Color.white;
 
         Programbtn[index].GetComponent<Image>().color = Color.yellow;
+
+        LM.Programcmd = index + 1;
+        LM.ProgramNowIndex = 1;
+        LM.LoadProgramListData();
     }
     //프로그램 소개 패널 보이기 / 숨기기
     public void ClickProgramShow()=> ProgramPanel.SetActive(true);
