@@ -13,4 +13,9 @@ public class ProgramPrefabData : MonoBehaviour
     public int Code2;
     public void setColor(Color c)=>gameObject.GetComponent<Image>().color = c;
 
+    public void ClickthisPrefab()
+    {
+        GameObject.Find("ButtonManager").GetComponent<LoadingButtonManage>()
+            .ClickProgramPrefab(Code1,Code2);
+    }
 }

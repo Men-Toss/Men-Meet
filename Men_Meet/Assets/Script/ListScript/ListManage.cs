@@ -399,7 +399,54 @@ public class ListManage : MonoBehaviour
                 Program_Array[i%8].GetComponent<ProgramPrefabData>().Code2 = i;
             }
         }
-        
+        else if (Programcmd == 2)
+        {
+            for (int i =(ProgramNowIndex-1)*8; i <ProgramNowIndex*8 ; i++)
+            {
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().NumberText.text = (i + 1).ToString();
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().TitleText.text = Program2[0][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().StartTimeText.text = Program2[2][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().EndTimeText.text = Program2[3][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code1 = 2;
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code2 = i;
+            }
+        }
+        else if (Programcmd == 3)
+        {
+            for (int i =(ProgramNowIndex-1)*8; i <ProgramNowIndex*8 ; i++)
+            {
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().NumberText.text = (i + 1).ToString();
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().TitleText.text = Program3[0][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().StartTimeText.text = Program3[2][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().EndTimeText.text = Program3[3][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code1 = 3;
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code2 = i;
+            }
+        }
+        else if (Programcmd == 4)
+        {
+            for (int i =(ProgramNowIndex-1)*8; i <ProgramNowIndex*8 ; i++)
+            {
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().NumberText.text = (i + 1).ToString();
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().TitleText.text = Program4[0][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().StartTimeText.text = Program4[2][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().EndTimeText.text = Program4[3][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code1 = 4;
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code2 = i;
+            }
+        }
+        else if (Programcmd == 5)
+        {
+            for (int i =(ProgramNowIndex-1)*8; i <ProgramNowIndex*8 ; i++)
+            {
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().NumberText.text = (i + 1).ToString();
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().TitleText.text = Program5[0][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().StartTimeText.text = Program5[2][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().EndTimeText.text = Program5[3][i];
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code1 = 5;
+                Program_Array[i%8].GetComponent<ProgramPrefabData>().Code2 = i;
+            }
+        }
     }
     //프로그램 리스트 다음 버튼 클릭 시
     public void NextProgramList()
@@ -418,6 +465,26 @@ public class ListManage : MonoBehaviour
         if (ProgramNowIndex < ProgramMaxIndex)
         {
             ProgramNowIndex++;
+            LoadProgramListData();
+        }
+    }
+
+    public void PreviousProgramList()
+    {
+         if (Programcmd == 1)
+            ProgramMaxIndex = (Program1[0].Count-1)/8+1;
+        else if(Programcmd == 2)
+            ProgramMaxIndex = (Program2[0].Count-1)/8+1;
+        else if(Programcmd == 3)
+            ProgramMaxIndex = (Program3[0].Count-1)/8+1;
+        else if(Programcmd == 4)
+            ProgramMaxIndex = (Program4[0].Count-1)/8+1;
+        else 
+            ProgramMaxIndex = (Program5[0].Count-1)/8+1;
+
+        if (ProgramNowIndex > 1)
+        {
+            ProgramNowIndex--;
             LoadProgramListData();
         }
     }
