@@ -107,6 +107,7 @@
      <Compile Include="Assets\AssetStore\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+     <Compile Include="Assets\Script\ListScript\ProgramPrefabData.cs" />
      <Compile Include="Assets\Script\NetWorkScript\PhotonManageScript.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\DemoVoiceUI.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbySceneManager.cs" />

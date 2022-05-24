@@ -24,6 +24,11 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public GameObject ProgramPanel;
     //프로그램 소개 버튼 배열
     public Button[] Programbtn = new Button[5];
+    //프로그램 프리팹 클릭시 나오는 패널
+    public GameObject ProgramDetailPanel;
+    public Text ProgramDetailTitleText;
+    public Text ProgramDetailTimeText;
+    public Text ProgramDetailIntroduceText;
     //프로그램/학교소개 버튼 , 버튼 텍스트
     public Button Intro_Pro_btn;
     public Text Intro_Pro_text;
@@ -125,6 +130,10 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
             Programbtn[i].GetComponent<Image>().color=Color.white;
 
         Programbtn[index].GetComponent<Image>().color = Color.yellow;
+
+        LM.Programcmd = index + 1;
+        LM.ProgramNowIndex = 1;
+        LM.LoadProgramListData();
     }
     //프로그램 소개 패널 보이기 / 숨기기
     public void ClickProgramShow()=> ProgramPanel.SetActive(true);
@@ -133,9 +142,6 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
         ProgramPanel.SetActive(false);
         CM.isCameraYes = true;
     }
-    
-    
-    
     
     //콜라이더 시 메세지버튼 보이기/숨기기
     public void Intro_Pro_btnShow() => Intro_Pro_btn.gameObject.SetActive(true);
@@ -202,5 +208,21 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
             ClickProgramButton(4);
             CM.isCameraYes = false;
         }
+    }
+    
+    //프로그램 소개 프리팹 클릭시
+    public void ClickProgramPrefab(int C1, int C2)
+    {
+        ProgramDetailPanel.SetActive(true);
+        switch (C1)
+        {
+            break;
+        }
+    }
+    
+    //프로그램 소개 상세 패널 숨기기
+    public void ClickProgramDetailHide()
+    {
+        ProgramDetailPanel.SetActive(false);
     }
 }
