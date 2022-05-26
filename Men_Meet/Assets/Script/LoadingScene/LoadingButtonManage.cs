@@ -27,8 +27,8 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     //프로그램 프리팹 클릭시 나오는 패널
     public GameObject ProgramDetailPanel;
     public Text ProgramDetailTitleText;
-    public Text ProgramDetailTimeText;
     public Text ProgramDetailIntroduceText;
+    public Text ProgramDetailTimeText;
     //프로그램/학교소개 버튼 , 버튼 텍스트
     public Button Intro_Pro_btn;
     public Text Intro_Pro_text;
@@ -216,7 +216,36 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
         ProgramDetailPanel.SetActive(true);
         switch (C1)
         {
-            break;
+            case 1:
+                ProgramDetailTitleText.text = LM.Program1[0][C2];
+                ProgramDetailIntroduceText.text = LM.Program1[1][C2];
+                ProgramDetailTimeText.text = 
+                    "일정 : "+LM.Program1[2][C2]+" ~ "+LM.Program1[3][C2];
+                break;
+            case 2:
+                ProgramDetailTitleText.text = LM.Program2[0][C2];
+                ProgramDetailIntroduceText.text = LM.Program2[1][C2];
+                ProgramDetailTimeText.text = 
+                    "일정 : "+LM.Program2[2][C2]+" ~ " +LM.Program2[3][C2];
+                break;
+            case 3:
+                ProgramDetailTitleText.text = LM.Program3[0][C2];
+                ProgramDetailIntroduceText.text = LM.Program3[1][C2];
+                ProgramDetailTimeText.text = 
+                    "일정 : "+LM.Program3[2][C2]+" ~ " +LM.Program3[3][C2];
+                break;
+            case 4:
+                ProgramDetailTitleText.text = LM.Program4[0][C2];
+                ProgramDetailIntroduceText.text = LM.Program4[1][C2];
+                ProgramDetailTimeText.text = 
+                    "일정 : "+LM.Program4[2][C2]+" ~ " +LM.Program4[3][C2];
+                break;
+            case 5:
+                ProgramDetailTitleText.text = LM.Program5[0][C2];
+                ProgramDetailIntroduceText.text = LM.Program5[1][C2];
+                ProgramDetailTimeText.text = 
+                    "일정 : "+LM.Program5[2][C2]+" ~ " +LM.Program5[3][C2];
+                break;
         }
     }
     

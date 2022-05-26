@@ -15,7 +15,9 @@ public class ProgramPrefabData : MonoBehaviour
 
     public void ClickthisPrefab()
     {
+        Debug.Log("Code1 : "+this.Code1+"   Code2 : "+Code2);
         GameObject.Find("ButtonManager").GetComponent<LoadingButtonManage>()
             .ClickProgramPrefab(Code1,Code2);
+        
     }
 }

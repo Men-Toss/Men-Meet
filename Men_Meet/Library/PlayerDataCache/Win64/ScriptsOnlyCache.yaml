@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - PhotonManageScript
     - PointersController
     - PrefabChat
+    - ProgramPrefabData
     - ProximityVoiceTrigger
     - ScreenManage
     - TestScreen
@@ -50,6 +51,7 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
     PhotonVoice.PUN.dll:
+    - Photon.Voice.PUN.PhotonVoiceNetwork
     - Photon.Voice.PUN.PhotonVoiceView
     PhotonVoice.dll:
     - Photon.Voice.Unity.Recorder
@@ -119,13 +121,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 2898}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3644}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 4212}
+      Script: {instanceID: 4210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,19 +188,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 2898}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3202}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 4146}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4346}
+      Script: {instanceID: 4344}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4584}
     - Class: 114
-      Script: {instanceID: 4710}
+      Script: {instanceID: 4708}
     - Class: 114
       Script: {instanceID: 5168}
     - Class: 114
@@ -279,61 +281,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 1664}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1682}
     - Class: 114
-      Script: {instanceID: 1694}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1928}
+      Script: {instanceID: 1926}
     - Class: 114
-      Script: {instanceID: 1950}
+      Script: {instanceID: 1948}
     - Class: 114
-      Script: {instanceID: 1960}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2034}
+      Script: {instanceID: 2032}
     - Class: 114
-      Script: {instanceID: 2284}
+      Script: {instanceID: 2282}
     - Class: 114
-      Script: {instanceID: 2346}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2564}
+      Script: {instanceID: 2562}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 2898}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3426}
+      Script: {instanceID: 3424}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 3648}
+      Script: {instanceID: 3646}
     - Class: 114
-      Script: {instanceID: 4146}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 4396}
     - Class: 114
-      Script: {instanceID: 4426}
+      Script: {instanceID: 4424}
     - Class: 114
-      Script: {instanceID: 4436}
+      Script: {instanceID: 4434}
     - Class: 114
-      Script: {instanceID: 4448}
+      Script: {instanceID: 4446}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4584}
     - Class: 114
-      Script: {instanceID: 4710}
+      Script: {instanceID: 4708}
     - Class: 114
-      Script: {instanceID: 4798}
+      Script: {instanceID: 4796}
     - Class: 114
-      Script: {instanceID: 4876}
+      Script: {instanceID: 4874}
     - Class: 114
-      Script: {instanceID: 4884}
+      Script: {instanceID: 4882}
     - Class: 114
       Script: {instanceID: 5138}
     - Class: 114
@@ -438,25 +440,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 2898}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3400}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3426}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3424}
     - Class: 114
-      Script: {instanceID: 4146}
+      Script: {instanceID: 3650}
     - Class: 114
-      Script: {instanceID: 4270}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 4268}
     - Class: 114
-      Script: {instanceID: 4710}
+      Script: {instanceID: 4326}
+    - Class: 114
+      Script: {instanceID: 4708}
+    - Class: 114
+      Script: {instanceID: 4902}
     - Class: 114
       Script: {instanceID: 4960}
     - Class: 114
@@ -469,6 +475,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5866}
     - Class: 114
       Script: {instanceID: 5974}
+    - Class: 114
+      Script: {instanceID: 5976}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1314,7 +1322,7 @@ ScriptsOnlyBuild:
     className: LoaderAnime
   - hash:
       serializedVersion: 2
-      Hash: 1002afe45c16c33b97f299e3fde455c9
+      Hash: 75780a2aade4150fe1d059dde2fa4c7b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ListManage
@@ -2022,6 +2030,12 @@ ScriptsOnlyBuild:
     className: PlayerAnimatorManager
   - hash:
       serializedVersion: 2
+      Hash: ce35f034c3d3e47fde45de0802ee4aef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProgramPrefabData
+  - hash:
+      serializedVersion: 2
       Hash: 5ae36aa27e46b25633847fc7cb6b5c87
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -2364,7 +2378,7 @@ ScriptsOnlyBuild:
     className: EventSystemSpawner
   - hash:
       serializedVersion: 2
-      Hash: 986c8e7de865d25a56a8f77e6e4a2f5f
+      Hash: 375418ba9a453155f50428e8274919c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IntroducePrefabData
@@ -2514,7 +2528,7 @@ ScriptsOnlyBuild:
     className: CharChoosePrefab
   - hash:
       serializedVersion: 2
-      Hash: 39e8c818ccafd04f365c8374e5b8e39d
+      Hash: 587a0d9f34ff6fb2c9aaeb9f23b08b48
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LoadingButtonManage
