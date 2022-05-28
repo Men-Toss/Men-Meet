@@ -13,6 +13,8 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public GameObject SettingPanel;
     public GameObject msgPanel;
     public GameObject ChatPanel;
+    public GameObject timerPanel;
+    public GameObject paintPanel;
     public Text msgText;
     public bool isChatpanel=false;
     public Button chatIcon;
@@ -259,5 +261,21 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public void SendChat()
     {
        
+    }
+    //타이머 패널 보이기
+    public void ShowTimer(){
+        timerPanel.SetActive(true);
+    }
+    //타이머 패널 숨기기
+    public void HideTimer(){
+        timerPanel.SetActive(false);
+    }
+    //타이머 패널 보이기
+    public void ShowPaint(){
+        paintPanel.SetActive(true);
+    }
+    //타이머 패널 숨기기
+    public void HilePaint(){
+        paintPanel.SetActive(false);
     }
 }

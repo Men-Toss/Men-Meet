@@ -777,6 +777,14 @@
       <Project>{80ff041c-6a38-40f1-f805-a10ebbbb5a91}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="RiseOfArabs.DevTools.SimpleTimers.Editor.csproj">
+      <Project>{3341208f-28c0-802a-4a1a-9d64c5329a41}</Project>
+      <Name>RiseOfArabs.DevTools.SimpleTimers.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="RiseOfArabs.DevTools.SimpleTimers.csproj">
+      <Project>{c51df164-6ec9-c99c-d072-17498cb52bf8}</Project>
+      <Name>RiseOfArabs.DevTools.SimpleTimers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

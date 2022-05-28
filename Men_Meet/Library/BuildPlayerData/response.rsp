@@ -14,6 +14,7 @@
 -a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Library\PlayerScriptAssemblies\Cinemachine.dll"
 -a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Library\PlayerScriptAssemblies\PhotonUnityNetworking.Demos.dll"
 -a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Library\PlayerScriptAssemblies\PhotonVoice.PUN.dll"
+-a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Library\PlayerScriptAssemblies\RiseOfArabs.DevTools.SimpleTimers.dll"
 -a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Assets\AssetStore\Photon\PhotonLibs\Photon3Unity3D.dll"
 -a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Assets\AssetStore\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll"
 -a="C:\DDE_WorkSpace\Men-Meet\Men_Meet\Assets\AssetStore\Photon\PhotonVoice\PhotonVoiceLibs\WSA\Photon.Voice.UWP.winmd"
