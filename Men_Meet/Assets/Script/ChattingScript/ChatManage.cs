@@ -48,6 +48,6 @@ public class ChatManage : MonoBehaviourPunCallbacks
 
         private void Update()
         {
-            UserConnectCountText.text = PhotonNetwork.CountOfPlayers.ToString()+"/"+"20";
+            UserConnectCountText.text = PhotonNetwork.CountOfPlayersOnMaster.ToString()+"/"+"20";
         }
 }

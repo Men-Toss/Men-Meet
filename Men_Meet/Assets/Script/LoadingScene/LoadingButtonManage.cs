@@ -254,4 +254,10 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     {
         ProgramDetailPanel.SetActive(false);
     }
+    
+    //채팅 보내기 버튼 - 구현 예정
+    public void SendChat()
+    {
+       
+    }
 }

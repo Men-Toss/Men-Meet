@@ -67,8 +67,27 @@ public class Movement3D : MonoBehaviour
 
             //매 프레임에 동작할 함수 실행
             InputMovement();
+            AnimationMovement();
         }
     }
+
+    private void AnimationMovement()
+    {
+        /*
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if(_animator.GetBool("Sitting"))
+                _animator.SetBool("Sitting",false);
+            else
+                _animator.SetBool("Sitting",true);
+        }
+        */
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            _animator.SetTrigger("Waving");
+        }
+    }
+
     //업데이트 함수 실행 후 호출
     void LateUpdate()
     {

@@ -21,7 +21,7 @@ public class PrefabChat : MonoBehaviour
     {
         if (PV.IsMine)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetKeyDown(KeyCode.Return) && !InputChatText.text.Equals(""))
             {
                 PV.RPC("chatRPC", RpcTarget.All, PhotonNetwork.NickName + " : "+InputChatText.text);
                 InputChatText.text = "";
