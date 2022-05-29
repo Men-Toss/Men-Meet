@@ -1,0 +1,5 @@
+네비게이션 바에서 Seoil 하이퍼링크 href="#portfolio" 로 바꿔주세용 앵커태그입니닷!!!!
+
+<ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="swing" href="#portfolio"
+                                style="color: #2969b4;font-size: 13px;padding: 10px;padding-right: 48px;padding-left: 15px;"><strong>Seoil</strong></a>
