@@ -52,8 +52,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Tests\Runtime\timer_tests.cs" />
      <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Tests\Runtime\cooldown_timer_tests.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Tests\Runtime\timer_tests.cs" />
      <None Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Tests\Runtime\RiseOfArabs.DevTools.SimpleTimers.Tests.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

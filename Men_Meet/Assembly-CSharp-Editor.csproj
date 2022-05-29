@@ -717,6 +717,10 @@
       <Project>{1de59b2a-25de-7d39-cd78-b588637c446e}</Project>
       <Name>com.ben-w.erp</Name>
     </ProjectReference>
+    <ProjectReference Include="RiseOfArabs.DevTools.SimpleTimers.Editor.csproj">
+      <Project>{3341208f-28c0-802a-4a1a-9d64c5329a41}</Project>
+      <Name>RiseOfArabs.DevTools.SimpleTimers.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonVoice.API.csproj">
       <Project>{f3bfa83c-b7db-c801-8b74-4da2982448ca}</Project>
       <Name>PhotonVoice.API</Name>
@@ -753,6 +757,10 @@
       <Project>{47b2ff7c-a126-363e-34f8-18f01819c720}</Project>
       <Name>PhotonVoice.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="RiseOfArabs.DevTools.SimpleTimers.csproj">
+      <Project>{c51df164-6ec9-c99c-d072-17498cb52bf8}</Project>
+      <Name>RiseOfArabs.DevTools.SimpleTimers</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
       <Project>{1ef443be-f207-c5c1-a385-7dd89ba4c670}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
@@ -776,14 +784,6 @@
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{80ff041c-6a38-40f1-f805-a10ebbbb5a91}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="RiseOfArabs.DevTools.SimpleTimers.Editor.csproj">
-      <Project>{3341208f-28c0-802a-4a1a-9d64c5329a41}</Project>
-      <Name>RiseOfArabs.DevTools.SimpleTimers.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="RiseOfArabs.DevTools.SimpleTimers.csproj">
-      <Project>{c51df164-6ec9-c99c-d072-17498cb52bf8}</Project>
-      <Name>RiseOfArabs.DevTools.SimpleTimers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

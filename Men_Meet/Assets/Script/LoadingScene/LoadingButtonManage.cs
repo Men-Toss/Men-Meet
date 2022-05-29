@@ -9,12 +9,15 @@ using Photon.Realtime;
 
 public class LoadingButtonManage : MonoBehaviourPunCallbacks
 {
+    public GameObject MAIN_CAMERA;
+    public GameObject SUB_CAMERA;
     public GameObject loadingPanel;
     public GameObject SettingPanel;
     public GameObject msgPanel;
     public GameObject ChatPanel;
     public GameObject timerPanel;
     public GameObject paintPanel;
+    public GameObject soundPanel;
     public Text msgText;
     public bool isChatpanel=false;
     public Button chatIcon;
@@ -270,12 +273,24 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public void HideTimer(){
         timerPanel.SetActive(false);
     }
-    //타이머 패널 보이기
+    //사운드 패널 보이기
+    public void ShowSound(){
+        soundPanel.SetActive(true);
+    }
+    //사운드 패널 숨기기
+    public void HideSound(){
+        soundPanel.SetActive(false);
+    }
+    //페인트 카메라 보이기
     public void ShowPaint(){
         paintPanel.SetActive(true);
+        MAIN_CAMERA.SetActive(false);
+        SUB_CAMERA.SetActive(true);
     }
-    //타이머 패널 숨기기
-    public void HilePaint(){
+    //페인트 카메라 숨기기
+    public void HidePaint(){
         paintPanel.SetActive(false);
+        MAIN_CAMERA.SetActive(true);
+        SUB_CAMERA.SetActive(false);
     }
 }

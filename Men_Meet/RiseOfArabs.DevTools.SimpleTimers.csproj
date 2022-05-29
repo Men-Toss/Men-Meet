@@ -52,27 +52,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerText_X_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerRecorder_X_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Structs\ITimer_X.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\TimeSegmentsController.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\UpdatedClass.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerPercentage_X_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Time extensions\TimeConversion_Xs.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\structs\CooldownTimer.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\ATimer_X_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Structs\TimerRecorder_X.cs" />
      <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Holders\CooldownTimer_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Updates_M.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Holders\InfiniteTimer_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Holders\ATimer_H.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\structs\ITimer.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Time extensions\TextTime_Xs.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Structs\Wave.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\structs\InfiniteTimer.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Structs\ITimer_X.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\structs\CooldownTimer.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Structs\TimerRecorder_X.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerRecorder_X_H.cs" />
      <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Holders\TimerEvents.cs" />
-     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\TimeSegment.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Updates_M.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\structs\InfiniteTimer.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\UpdatedClass.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Structs\Wave.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\structs\ITimer.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Holders\ATimer_H.cs" />
      <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerWaves_X_H.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerText_X_H.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\TimerPercentage_X_H.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Holders\InfiniteTimer_H.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\TimeSegment.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\TimeSegmentsController.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Time extensions\TimeConversion_Xs.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Holders\ATimer_X_H.cs" />
+     <Compile Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\Extensions\Time extensions\TextTime_Xs.cs" />
      <None Include="Assets\AssetStore\Rise of Arabs\DevTools\Simple timers\Runtime\RiseOfArabs.DevTools.SimpleTimers.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
