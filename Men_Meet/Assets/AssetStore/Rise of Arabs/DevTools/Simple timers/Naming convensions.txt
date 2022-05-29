@@ -1,0 +1,33 @@
+// Naming convensions
+Event variables NameNamed
+Properities: NameName
+Constant variables: NAME_NAME
+Normal variables: nameName
+Local/Temporary variables: _nameName
+
+Normal methods: NameName
+Coroutine methods: NameName_Co
+RPC methods: NameName_RPC
+
+Tests shall have all thats related to it follow this convention (name_name)
+
+Interace: INameName
+abstract class: ANameName
+
+// Nameing shortcuts
+_M = Manager,
+_S = System,
+_C = Controller,
+_W = Worker,
+_I = Info,
+_D = Data,
+_T = Type,
+_X = Extension,
+_E = Editor,
+_EW = EditorWindow,
+_H = Holder,
+_V = Event,
+_SO = ScriptableObject,
+
+// In case of plural add 's'
+_Ts = Types

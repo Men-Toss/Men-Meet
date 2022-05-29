@@ -1,0 +1,25 @@
+{
+    "name": "Editor",
+    "rootNamespace": "RiseOfArabs.DevTools.SimpleTimers.Tests.Editor",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "RiseOfArabs.DevTools.SimpleTimers.Editor",
+        "RiseOfArabs.DevTools.SimpleTimers"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

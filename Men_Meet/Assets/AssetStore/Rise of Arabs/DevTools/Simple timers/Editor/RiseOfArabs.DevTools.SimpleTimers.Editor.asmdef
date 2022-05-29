@@ -1,0 +1,19 @@
+{
+    "name": "RiseOfArabs.DevTools.SimpleTimers.Editor",
+    "rootNamespace": "RiseOfArabs.DevTools.SimpleTimers.Editor",
+    "references": [
+        "GUID:7cf96dba927f4df40ba55ea288b1217f",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

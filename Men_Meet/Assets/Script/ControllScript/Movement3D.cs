@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Realtime;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class Movement3D : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class Movement3D : MonoBehaviour
     public float jumpForce=20f;
     //땅에 닿았는지 체크
     public bool isGround = true;
+    //인사 애니메이션 중 움직여도 되는지
+    public bool ismoveYes = true;
     private bool IsCheckGrounded()
     {
         // CharacterController.IsGrounded가 true라면 Raycast를 사용하지 않고 판정 종료
@@ -66,8 +69,36 @@ public class Movement3D : MonoBehaviour
             else isRun = false;
 
             //매 프레임에 동작할 함수 실행
+            AnimationMovement();
+            if(ismoveYes)
             InputMovement();
         }
+    }
+
+    private void AnimationMovement()
+    {
+        /*
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if(_animator.GetBool("Sitting"))
+                _animator.SetBool("Sitting",false);
+            else
+                _animator.SetBool("Sitting",true);
+        }
+        */
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            _animator.SetBool("Wave",true);
+            ismoveYes = false;
+            Invoke("reYes",3.4f);
+        }
+    }
+    
+    //다시 움직일 수 있게
+    public void reYes()
+    {
+        _animator.SetBool("Wave",false);
+        ismoveYes = true;
     }
     //업데이트 함수 실행 후 호출
     void LateUpdate()

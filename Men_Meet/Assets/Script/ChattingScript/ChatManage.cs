@@ -15,15 +15,11 @@ public class ChatManage : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         UsetConnectStateText.text = "<color=yellow>" + newPlayer.NickName + "님이 참가하셨습니다</color>";
-        //ChatRPC("<color=yellow>" + newPlayer.NickName + "님이 참가하셨습니다</color>");
-        //UserConnectCountText.text = PhotonNetwork.CountOfPlayers.ToString()+"/"+"20";
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         UsetConnectStateText.text = "<color=yellow>" + otherPlayer.NickName + "님이 퇴장하셨습니다</color>";
-       // ChatRPC("<color=yellow>" + otherPlayer.NickName + "님이 퇴장하셨습니다</color>");
-        //UserConnectCountText.text = PhotonNetwork.CountOfPlayers.ToString()+"/"+"20";
     }
     
         public void updateChat(string msg)
@@ -48,6 +44,6 @@ public class ChatManage : MonoBehaviourPunCallbacks
 
         private void Update()
         {
-            UserConnectCountText.text = PhotonNetwork.CountOfPlayers.ToString()+"/"+"20";
+            UserConnectCountText.text = (PhotonNetwork.CountOfPlayersOnMaster+1).ToString()+" / "+"20";
         }
 }
