@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
+using Photon.Voice.Unity;
 
 public class LoadingButtonManage : MonoBehaviourPunCallbacks
 {
@@ -18,9 +19,16 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public GameObject timerPanel;
     public GameObject paintPanel;
     public GameObject soundPanel;
+    public Recorder myRecorder;
     public Text msgText;
     public bool isChatpanel=false;
     public Button chatIcon;
+    //마이크 음소거, 음소거 해제 상태
+    public bool ismicro = false;
+    //마이크 음소거, 음소거 해제 버튼
+    public Button microPhonebtn;
+    //음소거,음소거 해제 이미지
+    public Sprite[] microPhoneImage = new Sprite[2];
     //학교 소개 패널
     public GameObject IntroducePanel;
     //학교 소개 버튼 배열
@@ -41,8 +49,12 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public CameraMovement CM;
     //리스트 갱신을 위한 리스트 매니저
     public ListManage LM;
-    
-    
+
+    public void Start()
+    {
+        OnRecord();
+    }
+
     //메타버스 월드 입장
     public void ClickStart()
     {   
@@ -93,11 +105,6 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
             chatIcon.gameObject.SetActive(false);
             isChatpanel=true;
         }
-    }
-    //마이크 음소거 / 음소거 해제
-    public void ClickMicroPhone()
-    {
-        
     }
     //전체 볼륨 조정 / 0,1,2,3
     public void ClickVolume()
@@ -292,5 +299,31 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
         paintPanel.SetActive(false);
         MAIN_CAMERA.SetActive(true);
         SUB_CAMERA.SetActive(false);
+    }
+    //내마이크 음소거
+    public void OffRecord()
+    {
+        microPhonebtn.image.sprite = microPhoneImage[1];
+        myRecorder.IsRecording = false;
+    }
+    //내 마이크 음소거 해제
+    public void OnRecord()
+    {
+        microPhonebtn.image.sprite = microPhoneImage[0];
+        myRecorder.IsRecording = true;
+    }
+    //마이크 버튼 클릭 시
+    public void ClickMicroPhone()
+    {
+        if (!ismicro)
+        {
+            OnRecord();
+            ismicro = true;
+        }
+        else
+        {
+            ismicro = false;
+            OffRecord();
+        }
     }
 }

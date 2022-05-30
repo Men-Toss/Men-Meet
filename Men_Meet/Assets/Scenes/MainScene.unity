@@ -305,7 +305,7 @@ Transform:
   - {fileID: 1278483127}
   - {fileID: 647690926}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &11981712 stripped
 RectTransform:
@@ -3013,7 +3013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -137.5, y: -20}
+  m_AnchoredPosition: {x: -137.5, y: -62}
   m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &216616851
@@ -3601,7 +3601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &258057661
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5924,9 +5924,15 @@ MonoBehaviour:
   timerPanel: {fileID: 2072209957}
   paintPanel: {fileID: 605944714}
   soundPanel: {fileID: 321379554}
+  myRecorder: {fileID: 1468156538}
   msgText: {fileID: 595766419}
   isChatpanel: 0
   chatIcon: {fileID: 416267497}
+  ismicro: 0
+  microPhonebtn: {fileID: 1324708360}
+  microPhoneImage:
+  - {fileID: 21300000, guid: f2f9800a1d8f6624db87fcc401513e95, type: 3}
+  - {fileID: 21300000, guid: a2209b713c93ece44babfd822911c69e, type: 3}
   IntroducePanel: {fileID: 517013315}
   IntroDucebtn:
   - {fileID: 905364726}
@@ -16543,7 +16549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1324708361}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 558902154}
+        m_TargetAssemblyTypeName: LoadingButtonManage, Assembly-CSharp
+        m_MethodName: ClickMicroPhone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1324708361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17971,7 +17989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1439678819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18423,7 +18441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1468156538
 MonoBehaviour:
@@ -20216,7 +20234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1537082978
 MonoBehaviour:
@@ -24678,7 +24696,7 @@ Transform:
   m_Children:
   - {fileID: 1641430143}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919944782
 GameObject:
