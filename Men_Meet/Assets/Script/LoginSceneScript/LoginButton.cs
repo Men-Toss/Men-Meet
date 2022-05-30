@@ -34,7 +34,7 @@ public class LoginButton : MonoBehaviour
     {
         string serverid = "UID="+UIDInputText.text;
         string serverpw = "UPW="+UPWInputText.text;
-        string serverPath = "http://mentoss123.cafe24.com/SungjinTest/LoginTest.jsp?"+serverid+"&"+serverpw;
+        string serverPath = "http://mentoss123.cafe24.com/SungjinTest/MetaLogin.jsp?"+serverid+"&"+serverpw;
         Debug.Log(serverPath);
         using (UnityWebRequest webRequest = UnityWebRequest.Get(serverPath)) 
         {
