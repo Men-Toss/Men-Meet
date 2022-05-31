@@ -45,8 +45,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.MoveByKeys
     PhotonUnityNetworking.dll:
@@ -88,10 +86,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -2880,7 +2876,7 @@ ScriptsOnlyBuild:
     className: InputSystemObject
   - hash:
       serializedVersion: 2
-      Hash: 4b99b9ac645fc7a00ba194f6f9ab6079
+      Hash: f9ca86fb3c211a6afa881c33ee247a33
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LoadingButtonManage
@@ -3088,4 +3084,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LobbyScene.unity
   - Assets/Scenes/EnterScene.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/asdf7/Desktop/DDE/Men_Meet.exe
+  playerPath: C:/Users/asdf7/Downloads/TestMenMeet/Men_Meet.exe

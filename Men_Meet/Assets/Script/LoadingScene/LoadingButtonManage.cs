@@ -21,7 +21,7 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public GameObject soundPanel;
     public Recorder myRecorder;
     public Text msgText;
-    public bool isChatpanel=false;
+    public bool isChatpanel=true;
     public Button chatIcon;
     //마이크 음소거, 음소거 해제 상태
     public bool ismicro = false;
@@ -33,6 +33,10 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     public GameObject IntroducePanel;
     //학교 소개 버튼 배열
     public Button[] IntroDucebtn = new Button[4];
+    //학교 소개 이미지 배경
+    public Image IntroDuceImage;
+    //학교 소개 이미지
+    public Sprite[] IntroDuceSprites = new Sprite[6];
     //학교 프로그램 패널
     public GameObject ProgramPanel;
     //프로그램 소개 버튼 배열
@@ -325,5 +329,10 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
             ismicro = false;
             OffRecord();
         }
+    }
+    //학교 소개 상세 클릭 시
+    public void ClickIntroduceImage(int n)
+    {
+        IntroDuceImage.sprite = IntroDuceSprites[n];
     }
 }
