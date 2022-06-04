@@ -1,0 +1,13 @@
+ [업로드 파일 내용]
+- 페이지 카운터링 에러 확인, 게시물 로직수정
+- 로그인페이지 회원가입링크 미적용 확인 링크 추가
+- 게시글보기 날짜 설정 로직 구현, 수정 확인중
+
+[해결한 내용]
+(Menmeet_Mentoring.jsp에서)
+- javascript:pageItemSubmit(${currentPage+(currentPage-i)},${endPostNum+(currentPage-i)*-10})을
+>>javascript:pageItemSubmit(${i},${endPostNum- 10*(i-currentPage)})으로 수정
+
+(MentoringListProc에서)
+-int startPostNum = endPostNum-10; 을
+>>int startPostNum = endPostNum-9; 으로 수정 위와 같이 하면 11개 게시물이 출력되므로 9로 수정
