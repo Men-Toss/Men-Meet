@@ -21,9 +21,10 @@ public class PrefabChat : MonoBehaviour
     {
         if (PV.IsMine)
         {
+            string chatstring = "<color=red>"+PhotonNetwork.NickName + "</color> : " + InputChatText.text;
             if (Input.GetKeyDown(KeyCode.Return) && !InputChatText.text.Equals(""))
             {
-                PV.RPC("chatRPC", RpcTarget.All, PhotonNetwork.NickName + " : "+InputChatText.text);
+                PV.RPC("chatRPC", RpcTarget.All, chatstring);
                 InputChatText.text = "";
             }
         }
