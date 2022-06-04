@@ -3084,4 +3084,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LobbyScene.unity
   - Assets/Scenes/EnterScene.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/asdf7/Downloads/TestMenMeet/Men_Meet.exe
+  playerPath: C:/Users/asdf7/Downloads/Men_Meet.exe
