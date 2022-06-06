@@ -1,0 +1,14 @@
+ [업로드 파일 내용]
+- 게시물 내용 받아오는 DAO 메서드, DTO클래스 생성
+- 게시물 리스트의 게시물 시간과, 작성자 닉네임으로
+  멘토링 테이블+유저테이블의 정보를 받아오는 것 확인
+- 프론트에서 작성한 게시물 내용 showContent.html을 jsp와 정보 받아오는 내용으로 통합
+
+[발생문제 - 해결]
+- 게시글보기 클릭시 날짜값을 인식 못함
+- request.getAttribute()를 사용해서 문제 
+	>>> request.getParameter()
+관련 내용 링크: http://hsprnote.blogspot.com/2017/03/jsp-getparameter-getattribute.html
+- DAO sql문 내용 오타및 에러 
+	-> preparedstatement 값 전달 따옴표 및  String문 +연결시 띄어쓰기 실수 
+	>>>>알고리즘 스터디 그룹과 같이 논의 하여 해결
