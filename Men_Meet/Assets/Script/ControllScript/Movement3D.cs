@@ -16,6 +16,7 @@ public class Movement3D : MonoBehaviour
     Animator _animator;
     Camera _camera;
     CharacterController _controller;
+    UserColliderScript _colliderScript;
     //포톤 뷰
     public PhotonView PV;
     //중력 계수
@@ -59,6 +60,7 @@ public class Movement3D : MonoBehaviour
         _animator = this.GetComponent<Animator>();
         _camera=Camera.main;
         _controller = this.GetComponent<CharacterController>();
+        _colliderScript = this.GetComponent<UserColliderScript>();
     }
     
     void Update()
@@ -81,22 +83,14 @@ public class Movement3D : MonoBehaviour
 
     private void AnimationMovement()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            if(_animator.GetBool("Sitting"))
-                _animator.SetBool("Sitting",false);
-            else
-                _animator.SetBool("Sitting",true);
-        }
-        */
         if (Input.GetKeyDown(KeyCode.Q))
         {
             _animator.SetBool("Wave",true);
             ismoveYes = false;
             Invoke("reYes",3.4f);
         }
-        if (Input.GetKeyDown(KeyCode.C) )
+        
+        if (Input.GetKeyDown(KeyCode.C) && _colliderScript.isUseChair)
         {
             _animator.SetBool("Sit",true);
             Debug.Log("앉기");
