@@ -3501,6 +3501,7 @@ MonoBehaviour:
   jumpForce: 20
   isGround: 1
   ismoveYes: 1
+  lastPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &-631076801756316581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,12 +3523,12 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: Jumping
-  - Type: 4
-    SynchronizeType: 2
-    Name: Sitting
   - Type: 9
     SynchronizeType: 2
     Name: Wave
+  - Type: 4
+    SynchronizeType: 2
+    Name: Sit
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
@@ -3595,6 +3596,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0996ad511b98e874ab3ae279ddc39a9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isUseChair: 0
+  sittingX: 0
+  sittingY: 0
+  sittingZ: 0
 --- !u!114 &-2655575923282495585
 MonoBehaviour:
   m_ObjectHideFlags: 0

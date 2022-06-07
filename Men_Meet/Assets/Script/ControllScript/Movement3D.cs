@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using Photon.Realtime;
 using Photon.Pun;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class Movement3D : MonoBehaviour
 {
@@ -35,6 +37,8 @@ public class Movement3D : MonoBehaviour
     public bool isGround = true;
     //인사 애니메이션 중 움직여도 되는지
     public bool ismoveYes = true;
+    //의자 앉기 전 마지막 위치 저장
+    public Vector3 lastPosition;
     private bool IsCheckGrounded()
     {
         // CharacterController.IsGrounded가 true라면 Raycast를 사용하지 않고 판정 종료
@@ -92,6 +96,25 @@ public class Movement3D : MonoBehaviour
             ismoveYes = false;
             Invoke("reYes",3.4f);
         }
+        if (Input.GetKeyDown(KeyCode.C) )
+        {
+            _animator.SetBool("Sit",true);
+            Debug.Log("앉기");
+            //ismoveYes = false;
+            //lastPosition = this.transform.position;
+            //gameObject.transform.position = new Vector3(
+            //    gameObject.GetComponent<UserColliderScript>().sittingX,
+            //    gameObject.GetComponent<UserColliderScript>().sittingY,
+            //    gameObject.GetComponent<UserColliderScript>().sittingZ);
+        }
+
+        if (Input.GetKeyDown(KeyCode.C) && _animator.GetBool("Sit") == true)
+        {
+            _animator.SetBool("Sit",false);
+            //ismoveYes = true;
+            //gameObject.transform.position = lastPosition;
+        }
+            
     }
     
     //다시 움직일 수 있게

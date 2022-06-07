@@ -10,18 +10,20 @@ public class ChatManage : MonoBehaviourPunCallbacks
 {
     public Text[] ChatText = new Text[10];
     public Text UsetConnectStateText;
-    public Text UserConnectCountText;
+    public Text UserCountText;
     
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         UsetConnectStateText.text = "<color=yellow>" + newPlayer.NickName + "님이 참가하셨습니다</color>";
+        UserCountText.text = PhotonNetwork.CountOfPlayers.ToString()+" / 20";
     }
+
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         UsetConnectStateText.text = "<color=yellow>" + otherPlayer.NickName + "님이 퇴장하셨습니다</color>";
+        UserCountText.text = PhotonNetwork.CountOfPlayers.ToString()+" / 20";
     }
-    
         public void updateChat(string msg)
         {
             Debug.Log(msg);
@@ -40,10 +42,5 @@ public class ChatManage : MonoBehaviourPunCallbacks
                 ChatText[9].text = " "+msg;
             }
         
-        }
-
-        private void Update()
-        {
-            UserConnectCountText.text = (PhotonNetwork.CountOfPlayersOnMaster+1).ToString()+" / "+"20";
         }
 }

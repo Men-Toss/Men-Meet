@@ -83,8 +83,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -1918,7 +1916,7 @@ ScriptsOnlyBuild:
     className: DrawLineScript
   - hash:
       serializedVersion: 2
-      Hash: f525e64d87e76fa263bcd0b992b91bc5
+      Hash: f8183f201e3a650c8db869658022a0ef
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatManage
@@ -3086,4 +3084,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LobbyScene.unity
   - Assets/Scenes/EnterScene.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/asdf7/Desktop/Build/Men_Meet.exe
+  playerPath: C:/Users/asdf7/Downloads/Men_Meet.exe

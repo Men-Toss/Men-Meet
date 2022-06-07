@@ -16,7 +16,6 @@ public class PhotonManageScript : MonoBehaviourPunCallbacks
     public Text ChatInput;
     public Button StartButton;
     
-    
     //네트워크 서버 연결
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
     //Connect()콜백 함수
