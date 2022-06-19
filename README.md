@@ -1,6 +1,6 @@
-# 웹사이트 : http://mentoss123.cafe24.com/
-# 메타버스 서비스 Set-Up  : https://drive.google.com/file/d/16PB-MW0mvQRPd4e9zJ9saEn-u4GLjdDs/view?usp=sharing
-# 메뉴얼(사용자 설명서)
+### 웹사이트 : http://mentoss123.cafe24.com/
+### 메타버스 서비스 Set-Up  : https://drive.google.com/file/d/16PB-MW0mvQRPd4e9zJ9saEn-u4GLjdDs/view?usp=sharing
+### 메뉴얼(사용자 설명서)
 [MenMeet매뉴얼-_-METAVERSE.pptx](https://github.com/Men-Toss/Men-Meet/files/8934815/MenMeet.-_-METAVERSE.pptx)
 [MenMeet매뉴얼-_-WEB.pptx](https://github.com/Men-Toss/Men-Meet/files/8934816/MenMeet.-_-WEB.pptx)
 ![001](https://user-images.githubusercontent.com/76659528/174107825-460ab55a-feb5-44b1-a4ff-d4b6f2d4a793.png)
