@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraMovement
+    - ChairColider
     - ChangeColor
     - ChangeName
     - CharChoosePrefab
@@ -31,8 +32,6 @@ ScriptsOnlyBuild:
     - PrefabChat
     - ProgramPrefabData
     - ProximityVoiceTrigger
-    - ScreenManage
-    - TestScreen
     - UserColliderScript
     - UserStateScript
     PhotonUnityNetworking.Demos.dll:
@@ -45,6 +44,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.MoveByKeys
     PhotonUnityNetworking.dll:
@@ -147,7 +148,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3724}
     - Class: 114
-      Script: {instanceID: 4302}
+      Script: {instanceID: 4304}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -214,21 +215,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3276}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 4448}
+      Script: {instanceID: 4450}
     - Class: 114
-      Script: {instanceID: 4692}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 4816}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 5296}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 5720}
     - Class: 114
-      Script: {instanceID: 5718}
-    - Class: 114
-      Script: {instanceID: 6124}
+      Script: {instanceID: 6126}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -343,57 +342,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3728}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 4502}
+      Script: {instanceID: 4504}
     - Class: 114
-      Script: {instanceID: 4530}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4542}
     - Class: 114
-      Script: {instanceID: 4552}
+      Script: {instanceID: 4554}
     - Class: 114
-      Script: {instanceID: 4692}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 4816}
+      Script: {instanceID: 4908}
     - Class: 114
-      Script: {instanceID: 4906}
+      Script: {instanceID: 4990}
     - Class: 114
-      Script: {instanceID: 4988}
+      Script: {instanceID: 4998}
     - Class: 114
-      Script: {instanceID: 4996}
+      Script: {instanceID: 5268}
     - Class: 114
-      Script: {instanceID: 5266}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 5296}
+      Script: {instanceID: 5316}
     - Class: 114
-      Script: {instanceID: 5314}
+      Script: {instanceID: 5338}
     - Class: 114
-      Script: {instanceID: 5336}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 5494}
     - Class: 114
-      Script: {instanceID: 5492}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 5550}
-    - Class: 114
-      Script: {instanceID: 5868}
-    - Class: 114
-      Script: {instanceID: 5904}
+      Script: {instanceID: 5870}
     - Class: 114
       Script: {instanceID: 5906}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5908}
     - Class: 114
-      Script: {instanceID: 5922}
+      Script: {instanceID: 5912}
     - Class: 114
-      Script: {instanceID: 6126}
+      Script: {instanceID: 5924}
     - Class: 114
-      Script: {instanceID: 6132}
+      Script: {instanceID: 6128}
     - Class: 114
-      Script: {instanceID: 6270}
+      Script: {instanceID: 6134}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6272}
+    - Class: 114
+      Script: {instanceID: 6586}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -506,45 +503,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3732}
     - Class: 114
-      Script: {instanceID: 4124}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 4126}
     - Class: 114
-      Script: {instanceID: 4294}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4426}
+      Script: {instanceID: 4428}
     - Class: 114
-      Script: {instanceID: 4458}
+      Script: {instanceID: 4460}
     - Class: 114
-      Script: {instanceID: 4816}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 5020}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 5082}
+      Script: {instanceID: 5084}
     - Class: 114
-      Script: {instanceID: 5152}
+      Script: {instanceID: 5154}
     - Class: 114
-      Script: {instanceID: 5224}
+      Script: {instanceID: 5226}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 5296}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 5476}
+      Script: {instanceID: 5478}
     - Class: 114
-      Script: {instanceID: 5712}
+      Script: {instanceID: 5714}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 6012}
     - Class: 114
-      Script: {instanceID: 6126}
+      Script: {instanceID: 6128}
     - Class: 114
-      Script: {instanceID: 6148}
+      Script: {instanceID: 6150}
     - Class: 114
-      Script: {instanceID: 6462}
+      Script: {instanceID: 6464}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1340,7 +1337,7 @@ ScriptsOnlyBuild:
     className: ConnectAndJoinRandom
   - hash:
       serializedVersion: 2
-      Hash: 61432b4e7105c81923298d02f3ae950d
+      Hash: 688f9749d32152e271429a9ee63dd92a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement3D
@@ -1724,6 +1721,12 @@ ScriptsOnlyBuild:
     className: BezierCurve
   - hash:
       serializedVersion: 2
+      Hash: 5ab4e5d61f2a263e3efbbd32320f4b86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChairColider
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -2030,7 +2033,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 3d2c16fc2d0082d6a16adc7914828ed7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UserColliderScript
@@ -3084,4 +3087,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LobbyScene.unity
   - Assets/Scenes/EnterScene.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/asdf7/Downloads/Men_Meet.exe
+  playerPath: "C:/Users/asdf7/Downloads/\uC0C8 \uD3F4\uB354/Men_Meet.exe"
