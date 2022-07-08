@@ -79,9 +79,7 @@
 								style="cursor: pointer; text-decoration: underline;">비밀번호
 									변경하기</span></li>
 						</ul>
-						<label class="form-label"
-							style="margin-left: 40px; margin-top: 10px; font-size: 14px; margin-bottom: 20px;"><i
-							class="fas fa-search-location"></i>&nbsp;</label>
+						
 					</form>
 				</div>
 				<div class="col-md-6"
@@ -114,19 +112,16 @@
 									</button>
 								</form>
 							</li>
-	</c:forEach>
-	</c:otherwise>
-</c:choose>
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="text-center">
-			<span style="color: rgb(198, 210, 221); font-size: 12px;">Copyright
-				2022.Men-Toss.All rights reserved.</span>
-		</footer>
 	</section>
+		<%@include file="/footer.jsp"%>
 	<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 	<script

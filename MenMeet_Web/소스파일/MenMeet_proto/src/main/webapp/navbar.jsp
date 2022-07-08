@@ -35,11 +35,6 @@
 					style="color: #2969b4; font-size: 13px; padding: 10px; padding-right: 48px; padding-left: 15px;"><strong>Seoil</strong></a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					data-bss-hover-animate="swing"
-					href="/SeoilProgram/Menmeet_SeoilProgram.jsp"
-					style="color: #2969b4; font-size: 13px; padding: 10px; padding-right: 48px; padding-left: 15px;"><strong>Seoil
-							Program</strong></a></li>
-				<li class="nav-item"><a class="nav-link"
 					data-bss-hover-animate="swing" href="/MyPageProc"
 					style="color: #2969b4; font-size: 13px; padding: 10px; padding-right: 48px; padding-left: 15px;"><strong>Mypage</strong></a>
 				</li>

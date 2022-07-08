@@ -1,0 +1,11 @@
+[변경 사항]
+- 마이페이지에 잘못 추가된 돋보기 아이콘 삭제
+- 마이페이지에 include못한 footer태그를 include로 변경하고, 
+		section태그 안에 있던 footer를 section태그 밖으로 빼줌
+		<footer class="text-center">
+			<span style="color: rgb(198, 210, 221); font-size: 12px;">Copyright
+				2022.Men-Toss.All rights reserved.</span>
+		</footer>
+<%@include file="/footer.jsp"%>
+
+- 기존 SeoilProgram 기능 삭제
