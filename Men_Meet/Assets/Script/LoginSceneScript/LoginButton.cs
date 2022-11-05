@@ -32,6 +32,10 @@ public class LoginButton : MonoBehaviour
     //로그인 코루틴
     public IEnumerator Login()
     {
+        LoginSucceed();
+        stateScript.UserNickName = "도도한꿈틀이";
+        yield return null;
+        /*
         string serverid = "UID="+UIDInputText.text;
         string serverpw = "UPW="+UPWInputText.text;
         string serverPath = "http://mentoss123.cafe24.com/SungjinTest/MetaLogin.jsp?"+serverid+"&"+serverpw;
@@ -49,7 +53,7 @@ public class LoginButton : MonoBehaviour
                 string[] resultCmd = result.Split('$');
                 Debug.Log(result);
 
-                if (resultCmd[0].Trim().Equals("Correct"))
+                    if (resultCmd[0].Trim().Equals("Correct"))
                 {
                     Debug.Log("로그인 성공했습니다.");
                     stateScript.UserNickName = resultCmd[1].Trim();
@@ -65,6 +69,7 @@ public class LoginButton : MonoBehaviour
                 UPWInputText.text = "";
             }
         }
+        */
     }
     //로그인 성공 시 다음 씬
     void LoginSucceed()
