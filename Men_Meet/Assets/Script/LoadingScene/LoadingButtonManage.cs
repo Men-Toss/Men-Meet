@@ -279,30 +279,36 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
     //타이머 패널 보이기
     public void ShowTimer(){
         timerPanel.SetActive(true);
+        CM.isCameraYes = false;
     }
     //타이머 패널 숨기기
     public void HideTimer(){
         timerPanel.SetActive(false);
+        CM.isCameraYes = true;
     }
     //사운드 패널 보이기
     public void ShowSound(){
         soundPanel.SetActive(true);
+        CM.isCameraYes = false;
     }
     //사운드 패널 숨기기
     public void HideSound(){
         soundPanel.SetActive(false);
+        CM.isCameraYes = true;
     }
     //페인트 카메라 보이기
     public void ShowPaint(){
         paintPanel.SetActive(true);
         MAIN_CAMERA.SetActive(false);
         SUB_CAMERA.SetActive(true);
+        CM.isCameraYes = false;
     }
     //페인트 카메라 숨기기
     public void HidePaint(){
         paintPanel.SetActive(false);
         MAIN_CAMERA.SetActive(true);
         SUB_CAMERA.SetActive(false);
+        CM.isCameraYes = true;
     }
     //내마이크 음소거
     public void OffRecord()
