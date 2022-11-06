@@ -137,7 +137,6 @@
      <Compile Include="Assets\Script\NetWorkScript\PhotonManageScript.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\DemoVoiceUI.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\LobbySceneManager.cs" />
-     <Compile Include="Assets\Script\LoginSceneScript\LoginButton.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\SoundsForJoinAndLeave.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
@@ -161,7 +160,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Script\LobbySceneScript\CharChoosePrefab.cs" />
-     <Compile Include="Assets\Script\LoadingScene\LoadingButtonManage.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\AssetStore\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
