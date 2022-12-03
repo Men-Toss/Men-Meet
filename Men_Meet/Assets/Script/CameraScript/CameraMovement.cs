@@ -9,11 +9,11 @@ public class CameraMovement : MonoBehaviour
     //팔로우 할 오브젝트
     public Transform objectTofollow;
     //카메라 스피드
-    public float followSpeed=10f;
+    public float followSpeed;
     //카메라 민감도
-    public float sensitivity=100f;
+    public float sensitivity;
     //카메라 각도
-    public float clampAngle=70f;
+    public float clampAngle;
     //카메로 방향 X/Y
     private float rotX;
     private float rotY;

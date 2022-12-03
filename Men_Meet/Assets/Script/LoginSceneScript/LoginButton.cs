@@ -16,8 +16,8 @@ public class LoginButton : MonoBehaviour
     //테스트용 코드(삭제 예정)
     void Start()
     {
-        UIDInputText.text = "manager1";
-        UPWInputText.text = "mentoss123456";
+        UIDInputText.text = "mentoss1";
+        UPWInputText.text = "mentoss1@";
     }
     //회원가입 버튼 클릭 시 
    public void SignupClick() => Application.OpenURL(Signup);
@@ -35,12 +35,16 @@ public class LoginButton : MonoBehaviour
         LoginSucceed();
         stateScript.UserNickName = "도도한꿈틀이";
         yield return null;
-        /*
-        string serverid = "UID="+UIDInputText.text;
-        string serverpw = "UPW="+UPWInputText.text;
-        string serverPath = "http://mentoss123.cafe24.com/SungjinTest/MetaLogin.jsp?"+serverid+"&"+serverpw;
+        
+        string serverid = UIDInputText.text;
+        string serverpw = UPWInputText.text;
+
+        string serverPath = "http://52.79.209.184:8080/login";
+        WWWForm form = new WWWForm();
+        form.AddField("userId", serverid);
+        form.AddField("userPassword", serverpw);
         Debug.Log(serverPath);
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(serverPath)) 
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(serverPath,form)) 
         {
             yield return webRequest.SendWebRequest(); 
                 
@@ -69,7 +73,7 @@ public class LoginButton : MonoBehaviour
                 UPWInputText.text = "";
             }
         }
-        */
+        
     }
     //로그인 성공 시 다음 씬
     void LoginSucceed()

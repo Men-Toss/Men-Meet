@@ -223,7 +223,7 @@ public class ListManage : MonoBehaviour
     //프로그램 리스트 데이터 추가
     public void addProgramData()
     {
-        StartCoroutine(LoadProgramCorutine());
+       // StartCoroutine(LoadProgramCorutine());
     }
     //프로그램 리스트 코루틴
     //로그인 코루틴

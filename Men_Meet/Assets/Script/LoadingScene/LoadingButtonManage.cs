@@ -146,7 +146,7 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
             Programbtn[i].GetComponent<Image>().color=Color.white;
 
         Programbtn[index].GetComponent<Image>().color = Color.yellow;
-
+        
         LM.Programcmd = index + 1;
         LM.ProgramNowIndex = 1;
         LM.LoadProgramListData();
@@ -197,31 +197,31 @@ public class LoadingButtonManage : MonoBehaviourPunCallbacks
         else if (Intro_Pro_text.text.Equals("교과 프로그램"))
         {
             ClickProgramShow();
-            ClickProgramButton(0);
+            //ClickProgramButton(0);
             CM.isCameraYes = false;
         }
         else if (Intro_Pro_text.text.Equals("비교과 프로그램"))
         {
             ClickProgramShow();
-            ClickProgramButton(1);
+            //ClickProgramButton(1);
             CM.isCameraYes = false;
         }
         else if (Intro_Pro_text.text.Equals("학과 프로그램"))
         {
             ClickProgramShow();
-            ClickProgramButton(2);
+           // ClickProgramButton(2);
             CM.isCameraYes = false;
         }
         else if (Intro_Pro_text.text.Equals("기타 프로그램"))
         {
             ClickProgramShow();
-            ClickProgramButton(3);
+            //ClickProgramButton(3);
             CM.isCameraYes = false;
         }
         else if (Intro_Pro_text.text.Equals("자주 묻는 질문"))
         {
             ClickProgramShow();
-            ClickProgramButton(4);
+            //ClickProgramButton(4);
             CM.isCameraYes = false;
         }
     }

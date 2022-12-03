@@ -1174,6 +1174,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-02
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1261,6 +1265,19 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "\uC18C\uD504\uD2B8\uC6E8\uC5B4\uACF5\uD559\uACFC \uC878\uC5C5\uC791\uD488
+        \uC804\uC2DC\uD68C \uC8FC\uCD5C"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -6070,6 +6087,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-03
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6157,6 +6178,19 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "2022\uD559\uB144\uB3C4 \uB3D9\uACC4 \uACC4\uC808\uD559\uAE30 \uC2DC\uD589
+        \uC548\uB0B4\uC0C8\uAE00"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -6727,6 +6761,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-04
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6814,6 +6852,19 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "\uD559\uC0AC\uACBD\uACE0\uC790 \uBC0F \uD559\uB144\uC720\uAE09\uC790
+        \uC131\uC801 \uCDE8\uC18C \uC6B4\uC601 \uC9C0\uCE68 \uC548\uB0B4"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -7789,6 +7840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-04
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7876,6 +7931,18 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "2022\uD559\uB144\uB3C4 2\uD559\uAE30 \uBCF5\uD559 \uC2E0\uCCAD"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -19921,6 +19988,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-08
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -20008,6 +20079,19 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "[\uCF54\uB85C\uB09819 \uC9C0\uC5ED\uAC10\uC5FC \uC608\uBC29] 2022\uD559\uB144\uB3C4
+        1\uD559\uAE30 \uC218\uC5C5\uC6B4\uC601\uBC29\uC548 \uC548\uB0B4"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -21583,6 +21667,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-02
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21670,6 +21758,18 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "\uCD1D\uC7A5\uC774 \uCEE4\uD53C \uC3DC\uB2E4 \uC774\uBCA4\uD2B8 \uC9C4\uD589"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -23946,14 +24046,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTofollow: {fileID: 0}
-  followSpeed: 7
+  followSpeed: 500
   sensitivity: 300
   clampAngle: 25
   realCamera: {fileID: 1307120300}
   dirNormalized: {x: 0, y: 0, z: 0}
   finalDir: {x: 0, y: 0, z: 0}
   minDistance: 1
-  maxDistance: 2.5
+  maxDistance: 3
   finalDistance: 0
   smoothness: 1
   PV: {fileID: 0}
@@ -24905,6 +25005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-03
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -24992,6 +25096,19 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "2022\uD559\uB144\uB3C4 2\uD559\uAE30 \uC911\uAC04 \uAC15\uC758\uD3C9\uAC00
+        \uC2DC\uD589 \uC548\uB0B4"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
@@ -28819,6 +28936,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298972757}
     m_Modifications:
+    - target: {fileID: 1978047305822069504, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-12-01
+      objectReference: {fileID: 0}
     - target: {fileID: 2552154896240948064, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -28906,6 +29027,18 @@ PrefabInstance:
     - target: {fileID: 4004471347742811060, guid: eac179737d7cb624681712965ec6dc69, type: 3}
       propertyPath: m_Name
       value: ProgramPrefab1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159673747809421859, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942621389798427104, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: 2022-11-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092431485058923943, guid: eac179737d7cb624681712965ec6dc69, type: 3}
+      propertyPath: m_Text
+      value: "\uAD50\uB0B4 \uCEA1\uC2A4\uD1A4 \uC131\uACFC \uB300\uD68C \uC9C4\uD589"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac179737d7cb624681712965ec6dc69, type: 3}
