@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using ERP.Discord;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
@@ -29,23 +31,53 @@ public class LoginButton : MonoBehaviour
     public void ShowFailedPanel() => FailedPanel.SetActive(true);
 
     public void CloseFailedPanel() => FailedPanel.SetActive(false);
+
+    class  LoginCompleteUser
+    {
+        public bool isLoginConfirmed;
+        public string userId;
+        public string userName;
+        public LoginCompleteUser(bool isLoginConfirmed, string userId, string userName)
+        {
+            this.isLoginConfirmed = isLoginConfirmed;
+            this.userId = userId;
+            this.userName = userName;
+        }
+    }
+    class LoginUser
+    {
+        public string userId;
+        public string userPassword;
+
+        public LoginUser(string userId, string userPassword)
+        {
+            this.userId = userId;
+            this.userPassword = userPassword;
+        }
+    }
     //로그인 코루틴
     public IEnumerator Login()
     {
-        LoginSucceed();
-        stateScript.UserNickName = "도도한꿈틀이";
+        //LoginSucceed();
         yield return null;
         
         string serverid = UIDInputText.text;
         string serverpw = UPWInputText.text;
 
         string serverPath = "http://52.79.209.184:8080/login";
-        WWWForm form = new WWWForm();
-        form.AddField("userId", serverid);
-        form.AddField("userPassword", serverpw);
+        string json = JsonUtility.ToJson(new LoginUser(serverid,serverpw));
         Debug.Log(serverPath);
-        using (UnityWebRequest webRequest = UnityWebRequest.Post(serverPath,form)) 
+        Debug.Log(json);
+        Encoding.UTF8.GetBytes(json);   
+        
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(serverPath,json))
         {
+            byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+            
+            webRequest.uploadHandler = new UploadHandlerRaw(jsonToSend);
+            webRequest.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+            webRequest.SetRequestHeader("Content-Type","application/json");
+
             yield return webRequest.SendWebRequest(); 
                 
             if (webRequest.isNetworkError || webRequest.isHttpError){
@@ -53,14 +85,14 @@ public class LoginButton : MonoBehaviour
             }
             else
             {
-                string result = webRequest.downloadHandler.text;
-                string[] resultCmd = result.Split('$');
+                LoginCompleteUser result = JsonUtility.FromJson<LoginCompleteUser>(webRequest.downloadHandler.text);
+                
                 Debug.Log(result);
 
-                    if (resultCmd[0].Trim().Equals("Correct"))
+                    if (result.isLoginConfirmed)
                 {
                     Debug.Log("로그인 성공했습니다.");
-                    stateScript.UserNickName = resultCmd[1].Trim();
+                    stateScript.UserNickName = result.userName;
                     LoginSucceed();
                 }
                 else
