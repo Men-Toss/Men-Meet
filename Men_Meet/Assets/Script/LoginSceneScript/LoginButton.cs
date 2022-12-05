@@ -18,8 +18,7 @@ public class LoginButton : MonoBehaviour
     //테스트용 코드(삭제 예정)
     void Start()
     {
-        UIDInputText.text = "asdf74591";
-        UPWInputText.text = "qweasdzxc123!@#";
+        
     }
     //회원가입 버튼 클릭 시 
    public void SignupClick() => Application.OpenURL(Signup);

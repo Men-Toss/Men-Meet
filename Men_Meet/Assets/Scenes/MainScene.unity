@@ -42031,7 +42031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTofollow: {fileID: 0}
-  followSpeed: 500
+  followSpeed: 1500
   sensitivity: 300
   clampAngle: 25
   realCamera: {fileID: 1307120300}
